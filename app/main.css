@@ -8,3 +8,9 @@
   background: #ffffff !important;
   pointer-events: auto !important;
 }
+
+/* Ajoute dans ton fichier CSS global ou module */
+.scrollable-slide {
+  max-height: 200px;
+  overflow-y: auto;
+}
