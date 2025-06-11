@@ -33,7 +33,7 @@ export const Playground = () => {
       <>
          <mesh>
             <planeGeometry args={[2, 2]} />
-            <fxMaterial u_fx={fluid} u_color={[1, 0, 0]} key={FxMaterial.key} /> {/* Rouge */}
+            <fxMaterial u_fx={fluid} u_color={[1, 1, 1]} key={FxMaterial.key} /> {/* Rouge */}
          </mesh>
       </>
    );

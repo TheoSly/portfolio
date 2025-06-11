@@ -17,7 +17,7 @@ export type FxMaterialProps = {
 export const FxMaterial = shaderMaterial(
    {
       u_fx: new THREE.Texture(),
-      u_color: new THREE.Color(0x00aaff), // Couleur par défaut (bleu clair)
+      u_color: new THREE.Color(0x00aaff),
    },
 
    `

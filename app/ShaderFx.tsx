@@ -2,7 +2,6 @@
 
 import { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { Perf } from "r3f-perf";
 import { PerformanceMonitor } from "@react-three/drei";
 
 const Loading = () => {
