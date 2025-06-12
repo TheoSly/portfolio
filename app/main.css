@@ -1,3 +1,7 @@
+main {
+  width: 100vw;
+}
+
 .swiper-pagination-bullet {
   background-color: white !important;
   opacity: 0.5;
@@ -66,3 +70,57 @@
     .animate-cloud-flight {
       animation: cloud-flight 30s linear infinite;
     }
+
+
+
+.calendar-wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+.ContributionCalendar-day {
+    border-radius: 4px !important;
+    pointer-events: auto !important;
+}
+
+
+.ContributionCalendar-day[data-level='0'] {
+    background-color: #161b2246 !important;
+
+}
+
+.ContributionCalendar-day[data-level='1'] {
+    background-color: #0968DA!important;
+}
+
+.ContributionCalendar-day[data-level='2'] {
+    background-color: #0968DA!important;
+}
+
+.ContributionCalendar-day[data-level='3'] {
+    background-color: #53AEFE !important;
+}
+
+.ContributionCalendar-day[data-level='4'] {
+    background-color: #B6E3FF !important;
+}
+
+
+.graph-before-activity-overview {
+  border: none !important;
+}
+
+.width-full{
+  display: none !important;
+}
+
+.table-column{
+  display: none !important;
+}
+
+caption {
+  display: none !important;
+}

@@ -8,12 +8,16 @@ import { FaRegEnvelope } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { SiMalt } from "react-icons/si";
 import { FaDownload } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa6";
+
 
 
 // Swiper core
 import SwiperPhotos from './SwiperPhotos';
 import SwiperLogos from './SwiperLogos';
 import SwiperRecomandation from './SwiperRecomandation';
+import GithubCalendar from "./GithubCalendar";
+
 
 
 export default function Page() {
@@ -35,7 +39,7 @@ export default function Page() {
                
             <main className="flex flex-col md:flex-row justify-between items-start w-full h-full p-4 md:p-10 text-white pointer-events-none overflow-y-auto">
                
-               <div className="flex w-1/3 flex-col w-full md:w-1/3">
+               <div className="flex w-1/3 max-w-1/3 flex-col w-full md:w-1/3">
                   <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-4">
                      <p className="text-2xl">Développeur web fullstack basé à Strasbourg, avec 4 ans d’expérience, spécialisé dans la conception de sites web sur mesure, alliant performance, esthétique et technologies modernes.</p>
                      <div className="flex justify-between items-center mt-4">
@@ -52,6 +56,9 @@ export default function Page() {
                            <a href="https://www.malt.fr/profile/theosaly" target="_bank" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
                               <SiMalt />
                            </a> 
+                           <a href="https://github.com/TheoSly" target="_bank" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
+                              <FaGithub />
+                           </a>
                            
                         </div>
                         <div className="flex justify-between items-center gap-2">
@@ -152,6 +159,16 @@ export default function Page() {
                         <img className="w-12" src="aftereffect-icon.png" alt="" />
                         <img className="w-12" src="davinci-icon.png" alt="" />
                      </div>
+                  </section>
+
+                  <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-4">
+                     <div className="flex justify-between items-center mb-2">
+                        <h2 className="text-lg">GITHUB CONTRIBUTIONS</h2>
+                        <a href="https://github.com/TheoSly" target="_bank" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
+                           <FaGithub />
+                        </a>
+                     </div>
+                     <GithubCalendar />
                   </section>
                </div>
 

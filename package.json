@@ -12,6 +12,7 @@
     "@react-three/drei": "^10.1.2",
     "@react-three/fiber": "^9.1.2",
     "@tailwindcss/postcss": "^4.1.9",
+    "github-calendar": "^2.3.4",
     "next": "15.3.3",
     "postcss": "^8.5.4",
     "react": "^19.0.0",
