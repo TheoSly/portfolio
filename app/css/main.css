@@ -82,30 +82,41 @@ main {
 
 
 .ContributionCalendar-day {
-    border-radius: 4px !important;
-    pointer-events: auto !important;
+  border-radius: 2px !important;
+  transition: transform 0.2s;
 }
 
+.ContributionCalendar-day:hover {
+  transform: scale(1.4);
+}
+
+table {
+  border-collapse: separate !important;
+  border-spacing: 1.5px 1.5px !important;
+}
 
 .ContributionCalendar-day[data-level='0'] {
     background-color: #161b2246 !important;
-
 }
 
 .ContributionCalendar-day[data-level='1'] {
     background-color: #0968DA!important;
+    pointer-events: auto !important;
 }
 
 .ContributionCalendar-day[data-level='2'] {
     background-color: #0968DA!important;
+    pointer-events: auto !important;
 }
 
 .ContributionCalendar-day[data-level='3'] {
     background-color: #53AEFE !important;
+    pointer-events: auto !important;
 }
 
 .ContributionCalendar-day[data-level='4'] {
     background-color: #B6E3FF !important;
+    pointer-events: auto !important;
 }
 
 

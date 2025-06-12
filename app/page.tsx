@@ -1,5 +1,8 @@
+"use client";
+
 import { ShaderFx } from "./ShaderFx";
 import { Playground } from "./Playground";
+import { useDeviceType } from "./hooks/useDeviceType"
 
 // Components Section
 import Intro from "./sections/Intro";
@@ -17,6 +20,8 @@ import Photos from "./sections/Photos";
 import Map from "./sections/Map";
 
 export default function Page() {
+   const device = useDeviceType();
+
    return (
       <>
          <div
@@ -30,40 +35,74 @@ export default function Page() {
                <Playground />
             </ShaderFx>
          </div>
+
          <div className="absolute pointer-events-none">
-            <main className="flex flex-col md:flex-row justify-between items-start w-full h-full p-4 md:p-10 text-white pointer-events-none overflow-y-auto">
-               <div className="flex w-1/3 max-w-1/3 flex-col w-full md:w-1/3">
+            {device === "desktop" && (
+               <main className="flex flex-row justify-between items-start w-full h-full p-4 text-white pointer-events-none overflow-y-auto">
+                  <div className="flex w-1/3 flex-col">
+                     <Intro />
+                     <Propos />
+                     <Technologies />
+                     <Git />
+                  </div>
+
+                  <div className="flex w-1/3 flex-col">
+                     <Profile />
+                     <Certifications />
+                     <Recommandations />
+                     <Musique />
+                  </div>
+
+                  <div className="flex w-1/3 flex-col">
+                     <Experience />
+                     <Logos />
+                     <Formations />
+                     <Photos />
+                     <Map />
+                  </div>
+               </main>
+            )}
+
+            {device === "tablet" && (
+               <main className="flex flex-row justify-center items-start w-full h-full p-4 text-white pointer-events-none overflow-y-auto">
+                  <div className="flex flex-col w-1/2">
+                     <Intro />
+                     <Propos />
+                     <Technologies />
+                     <Git />
+                     <Profile />
+                     <Certifications />
+                  </div>
+
+                  <div className="flex flex-col w-1/2">
+                     <Recommandations />
+                     <Musique />
+                     <Experience />
+                     <Logos />
+                     <Formations />
+                     <Photos />
+                     <Map />
+                  </div>
+               </main>
+            )}
+
+            {device === "mobile" && (
+               <main className="flex flex-col w-full p-4 text-white pointer-events-none overflow-y-auto">
                   <Intro />
-
                   <Propos />
-
                   <Technologies />
-
                   <Git />
-               </div>
-
-               <div className="flex w-1/3 flex-col w-full md:w-1/3">
                   <Profile />
-
                   <Certifications />
-
                   <Recommandations />
-
                   <Musique />
-               </div>
-
-               <div className="flex w-1/3 flex-col w-full md:w-1/3">
                   <Experience />
-
                   <Logos />
-
                   <Formations />
-               
                   <Photos />
-
                   <Map />
-               </div>
-            </main>
+               </main>
+            )}
          </div>
       </>
    );

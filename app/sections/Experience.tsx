@@ -6,29 +6,29 @@ return (
         <div className="flex flex-col gap-4">
             <div className="flex gap-10 mt-4">
                 <div>
-                    <p className="text-lightgray text-sm">2024 - Now</p>
+                    <p className="text-lightgray text-sm">2024 - Auj‎ </p>
                 </div>
                 <div>
-                    <h3 className="text-sm">Développeur Back - SEW Usocome</h3>
-                    <p className="text-lightgray text-sm">Contact en alternance - Haguenau</p>
-                </div>
-            </div>
-            <div className="flex gap-10 mt-4">
-                <div>
-                    <p className="text-lightgray text-sm">2024 - Now</p>
-                </div>
-                <div>
-                    <h3 className="text-sm">Développeur Web Indépendant - Salink</h3>
-                    <p className="text-lightgray text-sm">Freelance - Strasbourg</p>
+                    <h3 className="text-sm">‎ ‎ ‎ Développeur Back - SEW Usocome</h3>
+                    <p className="text-lightgray text-sm">‎ ‎ ‎ Contact en alternance - Haguenau</p>
                 </div>
             </div>
             <div className="flex gap-10 mt-4">
                 <div>
-                    <p className="text-lightgray text-sm">2023 - Now</p>
+                    <p className="text-lightgray text-sm">2024 - Auj‎ </p>
                 </div>
                 <div>
-                    <h3 className="text-sm">Conseiller De Vente Prêt-à-Porter - Levi's</h3>
-                    <p className="text-lightgray text-sm">CDI - Vendenheim</p>
+                    <h3 className="text-sm">‎ ‎ ‎ Développeur Web Indépendant - Salink</h3>
+                    <p className="text-lightgray text-sm">‎ ‎ ‎ Freelance - Strasbourg</p>
+                </div>
+            </div>
+            <div className="flex gap-10 mt-4">
+                <div>
+                    <p className="text-lightgray text-sm">2023 - Auj‎ </p>
+                </div>
+                <div>
+                    <h3 className="text-sm">‎ ‎ ‎ Conseiller De Vente Prêt-à-Porter - Levi's</h3>
+                    <p className="text-lightgray text-sm">‎ ‎ ‎ CDI - Vendenheim</p>
                 </div>
             </div>
             <div className="flex gap-10 mt-4">
