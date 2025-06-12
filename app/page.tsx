@@ -1,12 +1,14 @@
 import { ShaderFx } from "./ShaderFx";
 import { Playground } from "./Playground";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
-import { faM } from '@fortawesome/free-solid-svg-icons';
 
-import { FaLinkedinIn } from "react-icons/fa";
+
+import { FaLinkedinIn } from "react-icons/fa6";
+import { FaRegEnvelope } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa6";
+import { SiMalt } from "react-icons/si";
+import { FaDownload } from "react-icons/fa6";
+
 
 // Swiper core
 import SwiperPhotos from './SwiperPhotos';
@@ -38,24 +40,25 @@ export default function Page() {
                      <p className="text-2xl">Développeur web fullstack basé à Strasbourg, avec 4 ans d’expérience, spécialisé dans la conception de sites web sur mesure, alliant performance, esthétique et technologies modernes.</p>
                      <div className="flex justify-between items-center mt-4">
                         <div className="flex justify-between items-center gap-2">
-                           <a href="mailto:theo.saly@example.com" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors pointer-events-auto" aria-label="Envoyer un email">
-                              <FontAwesomeIcon icon={faEnvelope} className="w-3" />
+                           <a href="mailto:theo.saly@example.com" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
+                              <FaRegEnvelope />
                            </a>
-                           <a href="mailto:theo.saly@example.com" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors pointer-events-auto" aria-label="Envoyer un email">
-                              <FontAwesomeIcon icon={faPhone} className="w-3" />
+                           <a href="tel:+33771874197" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
+                              <FaPhone />
                            </a>
-                           <a href="mailto:theo.saly@example.com" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors pointer-events-auto" aria-label="Envoyer un email">
-                              <FontAwesomeIcon icon={faLinkedin} className="w-3" />
+                           <a href="https://www.linkedin.com/in/theo-saly" target="_bank" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
+                              <FaLinkedinIn />
                            </a>
-                           <a href="mailto:theo.saly@example.com" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors pointer-events-auto" aria-label="Envoyer un email">
-                              <FontAwesomeIcon icon={faM} className="w-3" />
-                           </a>
-                        
-                           <button className="pointer-events-auto">L</button>
-                           <button className="pointer-events-auto">M</button>
+                           <a href="https://www.malt.fr/profile/theosaly" target="_bank" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
+                              <SiMalt />
+                           </a> 
+                           
                         </div>
-                        <div>
-                           <button className="pointer-events-auto">CV</button>
+                        <div className="flex justify-between items-center gap-2">
+                           <a href="/cv-theo-saly.pdf" className="rounded-full border border-border py-2 px-4 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto flex items-center justify-center gap-2" aria-label="Envoyer un email">
+                              <FaDownload />
+                              <p className="text-sm">CV</p>
+                           </a>
                         </div>
                      </div>
                   </section>
@@ -197,12 +200,19 @@ export default function Page() {
                   <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-4">
                      <h2 className="text-lg mb-3">MUSIQUE FAVORITE</h2>
                      <div className="flex flex-col">
-                        <iframe className="pointer-events-auto" src="https://open.spotify.com/embed/track/5ZUIPLoTLJZrPQh2kFZEUM?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        <iframe className="pointer-events-auto" src="https://open.spotify.com/embed/track/5ZUIPLoTLJZrPQh2kFZEUM?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                        <iframe className="pointer-events-auto" src="https://open.spotify.com/embed/track/5ZUIPLoTLJZrPQh2kFZEUM?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
+                        <iframe className="pointer-events-auto" src="https://open.spotify.com/embed/track/75n9WHWZAzhB59xSjIHly4?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                        
+                        <iframe className="pointer-events-auto" src="https://open.spotify.com/embed/track/1vvNmPOiUuyCbgWmtc6yfm?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                     
+                        <iframe className="pointer-events-auto" src="https://open.spotify.com/embed/track/5mjYQaktjmjcMKcUIcqz4s?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe className="pointer-events-auto" src="https://open.spotify.com/embed/track/3u4rIcRR7gSoJdkJIx9zpu?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        <iframe className="pointer-events-auto" src="https://open.spotify.com/embed/track/6GyFP1nfCDB8lbD2bG0Hq9?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        
+                        <iframe className="pointer-events-auto" src="https://open.spotify.com/embed/track/2YWjW3wwQIBLNhxWKBQd16?utm_source=generator&theme=0" width="100%" height="100" frameBorder="0" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            
                      </div>
                   </section>
+
+
                </div>
 
                <div className="flex w-1/3 flex-col w-full md:w-1/3">
@@ -260,7 +270,7 @@ export default function Page() {
                               <p className="text-lightgray text-sm">À venir‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
                            </div>
                            <div>
-                              <h3 className="text-sm">Expert en développement Full Stack</h3>
+                              <h3 className="text-sm">Mastère en développement Full Stack</h3>
                               <p className="text-lightgray text-sm">Ynov Campus - Strasbourg</p>
                            </div>
                         </div>
@@ -288,6 +298,46 @@ export default function Page() {
                   <section className="bg-mediumgray rounded-2xl border-1 border-border m-4">
                      <SwiperPhotos />
                   </section>
+
+                    <section className="bg-mediumgray rounded-2xl border-1 border-border m-4 relative overflow-hidden">
+  <img className="rounded-2xl h-100 object-cover w-full" src="/map.png" alt="" />
+
+  {/* Aura clignotante */}
+  <div
+    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-ping-custom rounded-full border-2 border-blue-400"
+    style={{ width: 40, height: 40 }}
+  ></div>
+
+  {/* Rond bleu statique */}
+  <div
+    className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full bg-blueapple border-2 border-white"
+    style={{ width: 20, height: 20, pointerEvents: "none" }}
+  ></div>
+
+  {/* Avion emoji animé */}
+  <div
+    className="absolute rotate-25 top-1/3 left-[-50px] animate-plane-flight"
+    style={{ pointerEvents: "none" }}
+  >
+    <img className="w-7 rotate-45" src="plane.png" alt="" />
+  </div>
+
+  <div
+    className="absolute rotate-25 top-2/4 left-[-50px] animate-plane-flight"
+    style={{ pointerEvents: "none" }}
+  >
+    <img className="w-8 rotate-45 opacity-50" src="shadow-plane.png" alt="" />
+  </div>
+
+  <div
+    className="absolute rotate-105 top-0 top-[-100px] left-[-50px] animate-cloud-flight"
+    style={{ pointerEvents: "none" }}
+  >
+    <img className="w-150 rotate-45 opacity-50" src="cloud.webp" alt="" />
+  </div>
+
+
+</section>
                   
                </div>
 
