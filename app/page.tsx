@@ -4,7 +4,7 @@ import { Playground } from "./Playground";
 
 
 import { FaLinkedinIn } from "react-icons/fa6";
-import { FaRegEnvelope } from "react-icons/fa6";
+import { FaEnvelope } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa6";
 import { SiMalt } from "react-icons/si";
 import { FaDownload } from "react-icons/fa6";
@@ -45,7 +45,7 @@ export default function Page() {
                      <div className="flex justify-between items-center mt-4">
                         <div className="flex justify-between items-center gap-2">
                            <a href="mailto:theo.saly@example.com" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
-                              <FaRegEnvelope />
+                              <FaEnvelope />
                            </a>
                            <a href="tel:+33771874197" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
                               <FaPhone />
@@ -210,7 +210,7 @@ export default function Page() {
                      </div>
                   </section>
 
-                  <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-4"> 
+                  <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 pb-0 rounded-2xl border-1 border-border m-4"> 
                      <SwiperRecomandation />
                   </section>
 
