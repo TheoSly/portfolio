@@ -15,7 +15,7 @@ import { FaGithub } from "react-icons/fa6";
 // Swiper core
 import SwiperPhotos from './SwiperPhotos';
 import SwiperLogos from './SwiperLogos';
-import SwiperRecomandation from './SwiperRecomandation';
+import SwiperRecommandation from './SwiperRecommandation';
 import GithubCalendar from "./GithubCalendar";
 
 
@@ -41,7 +41,7 @@ export default function Page() {
                
                <div className="flex w-1/3 max-w-1/3 flex-col w-full md:w-1/3">
                   <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-4">
-                     <p className="text-2xl">Développeur web fullstack basé à Strasbourg, avec 4 ans d’expérience, spécialisé dans la conception de sites web sur mesure, alliant performance, esthétique et technologies modernes.</p>
+                     <p className="text-2xl">Basé à Strasbourg, je suis Théo, développeur web frontend & backend depuis 5 ans, spécialisé dans le développement sur mesure de sites et applications web alliant efficacité et esthétique.</p>
                      <div className="flex justify-between items-center mt-4">
                         <div className="flex justify-between items-center gap-2">
                            <a href="mailto:theo.saly@example.com" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
@@ -211,7 +211,8 @@ export default function Page() {
                   </section>
 
                   <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 pb-0 rounded-2xl border-1 border-border m-4"> 
-                     <SwiperRecomandation />
+                     <h2 className="text-lg mb-3">RECOMMANDATIONS</h2>
+                     <SwiperRecommandation />
                   </section>
 
                   <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-4">
