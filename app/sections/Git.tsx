@@ -4,7 +4,7 @@ import GithubCalendar from "../GithubCalendar";
 export default function Git() {
 return (
 <>
-    <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-4">
+    <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
         <div className="flex justify-between items-center mb-2">
             <h2 className="text-lg">GITHUB CONTRIBUTIONS</h2>
             <a href="https://github.com/TheoSly" target="_bank"

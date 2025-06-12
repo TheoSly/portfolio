@@ -1,7 +1,7 @@
 export default function Technologies() {
 return (
 <>
-    <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-4">
+    <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
         <h2 className="text-lg mb-2">TECHNOLOGIES UTILISÉS</h2>
         <h3 className="text-xs text-lightgray">FRONTEND</h3>
         <div className="flex flex-wrap gap-1">

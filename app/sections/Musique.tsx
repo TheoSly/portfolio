@@ -1,7 +1,7 @@
 export default function Musique() {
 return (
 <>
-    <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-4">
+    <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
         <h2 className="text-lg mb-3">MUSIQUE FAVORITE</h2>
         <div className="flex flex-col">
             <iframe className="pointer-events-auto"

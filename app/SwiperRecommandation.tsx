@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 // import required modules
-import { Pagination, Autoplay } from 'swiper/modules';
+import { Pagination} from 'swiper/modules';
 
 import { IoPerson } from "react-icons/io5";
 import { FaLink } from "react-icons/fa6";
@@ -18,15 +18,11 @@ import { FaLink } from "react-icons/fa6";
 export default function SwiperRecommandation() {
     return (
             <Swiper
-                effect={'fade'}
-                autoplay={{
-                    delay: 12500,
-                }}
                 pagination={{
                 clickable: true,
                 }}
                 speed={500}
-                modules={[Pagination, Autoplay]}
+                modules={[Pagination]}
                 className="h-100%"
             >
                 <SwiperSlide>
@@ -44,7 +40,7 @@ export default function SwiperRecommandation() {
                                 <FaLink />
                             </a>
                         </div>
-                        
+                        <hr className="text-border my-2" />
                         <p className="text-center text-sm relative mb-10">
                             <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
                             <span className="text-lightgray block mx-6 py-6">
@@ -73,7 +69,7 @@ export default function SwiperRecommandation() {
                                 <FaLink />
                             </a>
                         </div>
-                        
+                        <hr className="text-border my-2" />
                         <p className="text-center text-sm relative">
                             <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
                             <span className="text-lightgray block mx-6 py-6">

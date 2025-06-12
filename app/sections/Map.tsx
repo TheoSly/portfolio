@@ -1,7 +1,7 @@
 export default function Map() {
 return (
 <>
-    <section className="bg-mediumgray rounded-2xl border-1 border-border m-4 relative overflow-hidden">
+    <section className="bg-mediumgray rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw] relative overflow-hidden">
         <img className="rounded-2xl h-100 object-cover w-full" src="/map.png" alt="" />
         
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 animate-ping-custom rounded-full border-2 border-blue-400"
