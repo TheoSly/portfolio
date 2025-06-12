@@ -24,7 +24,7 @@ main {
     transform: scale(0);
     opacity: 1;
   }
-  70% {
+  90% {
     transform: scale(2);
     opacity: 0;
   }
@@ -35,7 +35,7 @@ main {
 }
 
 .animate-ping-custom {
-  animation: ping-custom 2.5s infinite;
+  animation: ping-custom 2s infinite;
 }
 
 

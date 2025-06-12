@@ -1,0 +1,12 @@
+import SwiperRecommandation from '../SwiperRecommandation';
+
+export default function Recommandations() {
+return (
+<>
+    <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 pb-0 rounded-2xl border-1 border-border m-4">
+        <h2 className="text-lg mb-3">RECOMMANDATIONS</h2>
+        <SwiperRecommandation />
+    </section>
+</>
+);
+}
