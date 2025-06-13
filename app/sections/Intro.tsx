@@ -8,10 +8,8 @@ import { FaGithub } from "react-icons/fa6";
 export default function Intro() {
 return (
 <>
-    <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
-        <p className="text-2xl">Basé à Strasbourg, je suis Théo, développeur web frontend & backend depuis 5 ans,
-            spécialisé dans le développement sur mesure de sites et applications web alliant efficacité et esthétique.
-        </p>
+    <section className="min-h-62 bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
+        <p className="text-2xl">Je m'appelle Théo, développeur web fullstack à Strasbourg, spécialisé depuis 5 ans dans la création sur mesure de sites et d'applications.</p>
         <div className="flex justify-between items-center mt-4">
             <div className="flex justify-between items-center gap-2">
                 <a href="mailto:theo.saly@example.com"

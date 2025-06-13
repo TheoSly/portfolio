@@ -59,31 +59,31 @@ return (
       <>
          <div className="flex flex-row justify-between items-start w-full h-full text-white pointer-events-none overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pt-[2vw] md:pt-[1.5vw] xl:pt-[1vw]">
             <div className="flex w-1/3 flex-col">
-                  <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0 }}>
+                  <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0 }} viewport={{ once: true, amount: 0 }}>
                      <Intro />
                   </motion.div>
-                  <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.45 }}>
+                  <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.45 }} viewport={{ once: true, amount: 0 }}>
                      <Propos />
                   </motion.div>
             </div>
 
             <div className="flex w-1/3 flex-col">
-               <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.15 }}>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.15 }} viewport={{ once: true, amount: 0 }}>
                      <Profile />
                </motion.div>
-               <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }}>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.6 }} viewport={{ once: true, amount: 0 }}>
                      <Recommandations />
                </motion.div>
             </div>
 
             <div className="flex w-1/3 flex-col">
-               <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }}>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} viewport={{ once: true, amount: 0 }}>
                      <Experience />
                </motion.div>
-               <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.75 }}>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.75 }} viewport={{ once: true, amount: 0 }}>
                      <Logos />
                </motion.div>
-               <motion.div initial={{ opacity: 0, y: 200 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.9 }}>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.9 }} viewport={{ once: true, amount: 0 }}>
                      <Formations />
                </motion.div>
             </div>
@@ -91,9 +91,18 @@ return (
 
          <div className="w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap">
             <div className="flex flex-row w-max w-[100vw]">
-                  <Digitallia/>
-                  <Meteor/>
-                  <Quantium/>
+                  <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0 }} viewport={{ once: true, amount: 0.1 }}>
+                     <Digitallia/>
+                  </motion.div>
+
+                  <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 , delay: 0.15 }} viewport={{ once: true, amount: 0.1 }}>
+                     <Meteor/>
+                  </motion.div>
+
+                  <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} viewport={{ once: true, amount: 0.1 }}>
+                     <Quantium/>
+                  </motion.div>
+
                   <Salink/>
                   <Backrooms/>
                   <Aquabion/>
@@ -105,67 +114,143 @@ return (
 
          <div className="flex flex-row justify-between items-start w-full h-full text-white pointer-events-none overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pb-[2vw] md:pb-[1.5vw] xl:pb-[1vw]">
             <div className="flex w-1/3 flex-col">
-               <Technologies/>
-               <Photos/>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+                  <Technologies/>
+               </motion.div>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+                  <Photos/>
+               </motion.div>
             </div>
 
             <div className="flex w-1/3 flex-col">
-               <Certifications/>
-               <Musique/>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+                  <Certifications/>
+               </motion.div>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+                  <Musique/>
+               </motion.div>
             </div>
 
             <div className="flex w-1/3 flex-col">
-               <Map/>
-               <Git/>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+                  <Map/>
+               </motion.div>
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+                  <Git/>
+               </motion.div>
             </div>
          </div>
       </>
    )}
 
    {device === "tablet" && (
-      <main
-         className="flex flex-row justify-center items-start w-full h-full text-white pointer-events-none overflow-y-auto overflow-x-hidden p-[2vw] md:p-[1.5vw] xl:p-[1vw]">
+   <>
+      <div className="flex flex-row justify-center items-start w-full h-full text-white pointer-events-none overflow-y-auto overflow-x-hidden p-[2vw] md:p-[1.5vw] xl:p-[1vw]">
          <div className="flex flex-col w-1/2">
             <Intro/>
             <Propos/>
+            <Map/>
+         </div>
+
+         <div className="flex flex-col w-1/2">
+            <Profile/>
+            <Experience/>
+            <Logos/>
+            <Formations/>
+         </div>
+      </div>
+
+      <div className="flex flex-row justify-center items-start w-full h-full text-white pointer-events-none overflow-y-auto overflow-x-hidden p-[2vw] md:p-[1.5vw] xl:p-[1vw]">
+         <div className="flex flex-col w-1/2">
             <Technologies/>
             <Git/>
-            <Profile/>
             <Certifications/>
          </div>
 
          <div className="flex flex-col w-1/2">
             <Recommandations/>
             <Musique/>
-            <Experience/>
-            <Logos/>
-            <Formations/>
             <Photos/>
-            <Map/>
          </div>
-      </main>
+      </div>
+   </>
    )}
 
    {device === "mobile" && (
-      <main className="flex flex-col w-full text-white pointer-events-none overflow-y-auto overflow-x-hidden p-[2vw] md:p-[1.5vw] xl:p-[1vw]">
-         <Intro/>
-         <Propos/>
-         <Technologies/>
-         <Git/>
-         <Profile/>
-         <Certifications/>
-         <Recommandations/>
-         <Musique/>
-         <Experience/>
-         <Logos/>
-         <Formations/>
-         <Photos/>
-         <Map/>
-
-         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0 }}>
-               <Intro/>
+   <>
+      <div className="flex flex-col w-full text-white pointer-events-none overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pt-[2vw] md:pt-[1.5vw] xl:pt-[1vw]">
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0 }} viewport={{ once: true, amount: 0 }}>
+            <Intro/>
          </motion.div>
-      </main>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.15 }} viewport={{ once: true, amount: 0 }}>
+            <Profile/>
+         </motion.div>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0.3 }} viewport={{ once: true, amount: 0 }}>
+            <Propos/>
+         </motion.div>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+            <Experience/>
+         </motion.div>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+            <Logos/>
+         </motion.div>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+            <Formations/>
+         </motion.div>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+            <Recommandations/>
+         </motion.div>
+      </div>
+
+      <div className="w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap">
+         <div className="flex flex-row w-max w-[100vw]">
+               <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+                  <Digitallia/>
+               </motion.div>
+
+               <Meteor/>
+               <Quantium/>
+               <Salink/>
+               <Backrooms/>
+               <Aquabion/>
+               <Cuxdesign/>
+               <Nathanmaurer/>
+               <Theosaly/>
+         </div>
+      </div>
+
+      <div className="flex flex-col w-full text-white pointer-events-none overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pb-[2vw] md:pb-[1.5vw] xl:pb-[1vw]">
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+            <Map/>
+         </motion.div>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+            <Technologies/>
+         </motion.div>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+            <Git/>
+         </motion.div>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+            <Certifications/>
+         </motion.div>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+            <Photos/>
+         </motion.div>
+
+         <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
+            <Musique/>
+         </motion.div>
+      </div>
+   </>
    )}
 </>
 );

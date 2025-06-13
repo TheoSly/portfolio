@@ -1,7 +1,7 @@
 export default function Experience() {
 return (
 <>
-    <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
+    <section className="xl:min-h-84 bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
         <h2 className="text-lg">EXPÉRIENCES</h2>
         <div className="flex flex-col gap-4">
             <div className="flex gap-10 mt-4">
@@ -9,7 +9,7 @@ return (
                     <p className="text-lightgray text-sm">2024 - Auj‎ </p>
                 </div>
                 <div>
-                    <h3 className="text-sm">‎ ‎ ‎ Développeur Back - SEW Usocome</h3>
+                    <h3 className="text-sm">‎ ‎ ‎ Développeur back - SEW Usocome</h3>
                     <p className="text-lightgray text-sm">‎ ‎ ‎ Contact en alternance - Haguenau</p>
                 </div>
             </div>
@@ -19,7 +19,7 @@ return (
                     <p className="text-lightgray text-sm">2024 - Auj‎ </p>
                 </div>
                 <div>
-                    <h3 className="text-sm">‎ ‎ ‎ Développeur Web Indépendant - Salink</h3>
+                    <h3 className="text-sm">‎ ‎ ‎ Développeur indépendant - Salink</h3>
                     <p className="text-lightgray text-sm">‎ ‎ ‎ Freelance - Strasbourg</p>
                 </div>
             </div>
@@ -29,7 +29,7 @@ return (
                     <p className="text-lightgray text-sm">2023 - Auj‎ </p>
                 </div>
                 <div>
-                    <h3 className="text-sm">‎ ‎ ‎ Conseiller De Vente Prêt-à-Porter - Levi's</h3>
+                    <h3 className="text-sm">‎ ‎ ‎ Conseiller en prêt-à-porter - Levi's</h3>
                     <p className="text-lightgray text-sm">‎ ‎ ‎ CDI - Vendenheim</p>
                 </div>
             </div>
@@ -39,7 +39,7 @@ return (
                     <p className="text-lightgray text-sm">2024 - 2024</p>
                 </div>
                 <div>
-                    <h3 className="text-sm">Développeur Front - Marketify</h3>
+                    <h3 className="text-sm">Développeur front - Marketify</h3>
                     <p className="text-lightgray text-sm">Stage - Gries</p>
                 </div>
             </div>

@@ -1,9 +1,9 @@
 export default function Propos() {
 return (
 <>
-    <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
-        <h2 className="text-lg mb-3">À PROPOS DE MOI</h2>
-        <p className="text-base text-lightgray">
+    <section className="xl:min-h-140 bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
+        <h2 className="text-lg mb-2">À PROPOS DE MOI</h2>
+        <p className="text-base text-lightgray mb-3">
             Je m’appelle
             <span className="text-white"> Théo</span>, âgé de
             <span className="text-white"> 20 ans</span> basé à
@@ -19,7 +19,7 @@ return (
             <span className="text-white"> solutions sur mesure</span> et
             <span className="text-white"> efficaces</span>.
         </p>
-        <br />
+        
         <p className="text-base text-lightgray">
             Toujours
             <span className="text-white"> souriant</span>,
