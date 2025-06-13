@@ -42,7 +42,7 @@ return (
             <span className="text-white"> contacter</span> !
         </p>
         <br />
-        <img className="w-40 mt-2" src="/signature.png" alt="" />
+        <img className="w-40 mt-2" src="autres/signature.png" alt="" />
     </section>
 </>
 );
