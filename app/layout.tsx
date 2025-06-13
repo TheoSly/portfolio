@@ -1,4 +1,9 @@
 import "./css/main.css";
+import "./css/map.css";
+import "./css/git.css";
+import "./css/slider.css";
+
+
 import "./globals.css";
 import type { Metadata } from "next";
 

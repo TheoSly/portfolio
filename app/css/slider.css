@@ -1,0 +1,15 @@
+.swiper-pagination-bullet {
+    background-color: white !important;
+    opacity: 0.5;
+    pointer-events: auto !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: #ffffff !important;
+    pointer-events: auto !important;
+}
+
+.scrollable-slide {
+    max-height: 200px;
+    overflow-y: auto;
+}

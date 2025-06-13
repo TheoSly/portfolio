@@ -1,7 +1,7 @@
 export default function Propos() {
 return (
 <>
-    <section className="xl:min-h-140 bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
+    <section className="md:min-h-158 xl:min-h-140 flex flex-col justify-between bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
         <h2 className="text-lg mb-2">À PROPOS DE MOI</h2>
         <p className="text-base text-lightgray mb-3">
             Je m’appelle

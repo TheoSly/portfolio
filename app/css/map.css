@@ -1,0 +1,51 @@
+@keyframes ping-custom {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+
+    90% {
+        transform: scale(2);
+        opacity: 0;
+    }
+
+    100% {
+        transform: scale(2);
+        opacity: 0;
+    }
+}
+
+.animate-ping-custom {
+    animation: ping-custom 2s infinite;
+}
+
+
+
+@keyframes plane-flight {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(50vw);
+    }
+}
+
+.animate-plane-flight {
+    animation: plane-flight 10s linear infinite;
+}
+
+
+@keyframes cloud-flight {
+    0% {
+        transform: translateX(-30vw);
+    }
+
+    100% {
+        transform: translateX(30vw);
+    }
+}
+
+.animate-cloud-flight {
+    animation: cloud-flight 30s linear infinite;
+}
