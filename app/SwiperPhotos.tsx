@@ -26,10 +26,10 @@ export default function SwiperPhotos() {
                 modules={[Pagination, EffectFade, Autoplay]}
                 className="h-100 pointer-events-none"
             >
-                <SwiperSlide className="pointer-events-none" ><img className="h-100 w-fit object-cover rounded-2xl pointer-events-none" src="profile.png" alt="" /></SwiperSlide>
-                <SwiperSlide className="pointer-events-none"><img className="h-100 w-fit object-cover rounded-2xl pointer-events-none" src="IMG_3809.jpg" alt="" /></SwiperSlide>
-                <SwiperSlide className="pointer-events-none"><img className="h-100 w-fit object-cover rounded-2xl pointer-events-none" src="profile.png" alt="" /></SwiperSlide>
-                <SwiperSlide className="pointer-events-none"><img className="h-100 w-fit object-cover rounded-2xl pointer-events-none" src="IMG_3809.jpg" alt="" /></SwiperSlide>
+                <SwiperSlide className="pointer-events-none" ><img className="h-100 w-fit object-cover rounded-2xl pointer-events-none" src="image-mood/IMG_3383 2.heic" alt="" /></SwiperSlide>
+                <SwiperSlide className="pointer-events-none"><img className="h-100 w-fit object-cover rounded-2xl pointer-events-none" src="image-mood/export_1711570158637 2.jpg" alt="" /></SwiperSlide>
+                <SwiperSlide className="pointer-events-none"><img className="h-100 w-fit object-cover rounded-2xl pointer-events-none" src="image-mood/IMG_0539 2.JPG" alt="" /></SwiperSlide>
+                <SwiperSlide className="pointer-events-none"><img className="h-100 w-fit object-cover rounded-2xl pointer-events-none" src="image-mood/IMG_20191022_122234_001_COVER 2.jpg" alt="" /></SwiperSlide>
 
         </Swiper>
     );

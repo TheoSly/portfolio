@@ -27,6 +27,8 @@ import Salink from "./projets/Salink";
 import Backrooms from "./projets/Backrooms";
 import Aquabion from "./projets/Aquabion";
 import Cuxdesign from "./projets/Cuxdesign";
+import Nathanmaurer from "./projets/Nathanmaurer";
+import Theosaly from "./projets/Theosaly";
 
 
 export default function Page() {
@@ -58,8 +60,8 @@ return (
             <Backrooms />
             <Aquabion />
             <Cuxdesign />
-
-            
+            <Nathanmaurer />
+            <Theosaly />
       </div>
    </div>
 

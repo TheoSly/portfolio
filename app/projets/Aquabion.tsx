@@ -15,7 +15,7 @@ return (
             </p>
             <hr className="text-white opacity-20 my-2" />
             <div className="flex flex-wrap items-center gap-2 mt-2">
-                <a href="https://fr.wordpress.org" target="_blank"
+                <a href="https://www.php.net" target="_blank"
                     className="text-sm font-thin rounded-full border border-border py-1 px-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto inline-flex items-center justify-center"
                     aria-label="Visiter Digitallia.fr">
                     PHP

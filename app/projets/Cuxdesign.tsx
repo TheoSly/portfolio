@@ -30,6 +30,16 @@ return (
                     aria-label="Visiter Digitallia.fr">
                     JS
                 </a>
+                <div
+                    className="text-sm font-thin rounded-full border border-border py-1 px-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto inline-flex items-center justify-center"
+                    aria-label="Visiter Digitallia.fr">
+                    Design
+                </div>
+                <div
+                    className="text-sm font-thin rounded-full border border-border py-1 px-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto inline-flex items-center justify-center"
+                    aria-label="Visiter Digitallia.fr">
+                    Maquettage
+                </div>
             </div>
         </div>
 
