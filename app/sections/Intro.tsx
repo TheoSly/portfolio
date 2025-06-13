@@ -42,7 +42,7 @@ return (
 
             </div>
             <div className="flex justify-between items-center gap-2">
-                <a href="/cv-theo-saly.pdf"
+                <a href="download/cv-theo-saly.pdf"
                     className="rounded-full border border-border py-2 px-4 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto flex items-center justify-center gap-2"
                     aria-label="Envoyer un email">
                     <FaDownload/>

@@ -10,7 +10,7 @@ return (
                 </div>
                 <div>
                     <div className="flex items-center gap-2">
-                        <img className="w-4" src="emojy-globe.png" alt="" />
+                        <img className="w-4" src="emojys/emojy-globe.png" alt="" />
                         <h3 className="text-sm">Opquast</h3>
                     </div>
                     <p className="text-lightgray text-sm">Maîtrise règles et langage qualité web.</p>
@@ -23,7 +23,7 @@ return (
                 </div>
                 <div>
                     <div className="flex items-center gap-2">
-                        <img className="w-4" src="emojy-lock.png" alt="" />
+                        <img className="w-4" src="emojys/emojy-lock.png" alt="" />
                         <h3 className="text-sm">SecNum</h3>
                     </div>
                     <p className="text-lightgray text-sm">Cybersécurité, authentification, Internet, poste.</p>
@@ -36,7 +36,7 @@ return (
                 </div>
                 <div>
                     <div className="flex items-center gap-2">
-                        <img className="w-4" src="emojy-car.png" alt="" />
+                        <img className="w-4" src="emojys/emojy-car.png" alt="" />
                         <h3 className="text-sm">Permis de conduire</h3>
                     </div>
                     <p className="text-lightgray text-sm">Permis B</p>
