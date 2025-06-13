@@ -10,7 +10,7 @@ return (
 
         <div
             className="absolute top-4 left-6 right-6 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 text-white text-sm">
-            <p className="text-base whitespace-normal break-words">
+            <p className="text-sm xl:text-base whitespace-normal break-words">
                 Site vitrine développé et intégré pour la Brasserie Meteor, l’une des plus anciennes brasseries indépendantes de France. Projet réalisé en partie au sein de l’agence web Marketify, puis finalisé en freelance. Conçu sous WordPress avec Elementor Pro, mettant en valeur l’héritage et le savoir-faire de la marque à travers un design soigné et une intégration entièrement responsive.
             </p>
             <hr className="text-white opacity-20 my-2" />

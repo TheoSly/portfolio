@@ -10,7 +10,7 @@ return (
 
         <div
             className="absolute top-4 left-6 right-6 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 text-white text-sm">
-            <p className="text-base whitespace-normal break-words">
+            <p className="text-sm xl:text-base whitespace-normal break-words">
                 Site vitrine développé et intégré pour l'entreprise Aquabion, marque spécialisée dans les solutions anticalcaires écologiques. Le site propose deux parcours distincts : une version B2B pour les professionnels et une version B2C pour les particuliers. Réalisé avec Bootstrap, en assurant une navigation claire et une présentation adaptée aux deux types de publics.
             </p>
             <hr className="text-white opacity-20 my-2" />

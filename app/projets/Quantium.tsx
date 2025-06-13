@@ -10,7 +10,7 @@ return (
 
         <div
             className="absolute top-4 left-6 right-6 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 text-white text-sm">
-            <p className="text-base whitespace-normal break-words">
+            <p className="text-sm xl:text-base whitespace-normal break-words">
                 Jeu RPG développé en freelance en JavaScript avec p5.js, inspiré des jeux Pokémon Game Boy/DS. Exploration 2D avec multi-cartes, combats au tour par tour, et gestion des collisions. Le choix de p5.js permet une liberté totale sur le gameplay et la programmation. Graphismes pixel art minimalistes, cartes créées avec Tiled et exportées en JSON.
             </p>
             <hr className="text-white opacity-20 my-2" />

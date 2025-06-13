@@ -10,7 +10,7 @@ return (
 
         <div
             className="absolute top-4 left-6 right-6 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 text-white text-sm">
-            <p className="text-base whitespace-normal break-words">
+            <p className="text-sm xl:text-base whitespace-normal break-words">
                 Site vitrine développé et intégré en freelance pour Nathan Maurer, photographe et vidéaste. Réalisé en PHP natif, avec des animations fluides basées sur GSAP, ce site met en avant ses travaux photos et vidéos à travers une navigation immersive et dynamique.
             </p>
             <hr className="text-white opacity-20 my-2" />

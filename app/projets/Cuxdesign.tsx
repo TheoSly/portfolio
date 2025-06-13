@@ -10,8 +10,8 @@ return (
 
         <div
             className="absolute top-4 left-6 right-6 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 text-white text-sm">
-            <p className="text-base whitespace-normal break-words">
-                Site vitrine développé et intégré pour l'entreprise Aquabion, marque spécialisée dans les solutions anticalcaires écologiques. Le site propose deux parcours distincts : une version B2B pour les professionnels et une version B2C pour les particuliers. Réalisé avec Bootstrap, en assurant une navigation claire et une présentation adaptée aux deux types de publics.
+            <p className="text-sm xl:text-base whitespace-normal break-words">
+                Site vitrine développé et intégré en freelance pour CUX Design, afin de présenter ses services en UI/UX design. Réalisé sous WordPress avec Elementor, en mettant l’accent sur une mise en page épurée et claire pour valoriser l’expertise en design d’interface et expérience utilisateur.
             </p>
             <hr className="text-white opacity-20 my-2" />
             <div className="flex flex-wrap items-center gap-2 mt-2">

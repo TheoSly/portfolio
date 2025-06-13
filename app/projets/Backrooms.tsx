@@ -10,7 +10,7 @@ return (
 
         <div
             className="absolute top-4 left-6 right-6 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 text-white text-sm">
-            <p className="text-base whitespace-normal break-words">
+            <p className="text-sm xl:text-base whitespace-normal break-words">
                 Jeu d’exploration développé sous Unity, inspiré de l’univers des Backrooms. Composé de 3 niveaux avec des quêtes à accomplir, il plonge le joueur dans un environnement angoissant et labyrinthique. Les objets et décors ont été modélisés en 3D avec Blender, renforçant l’immersion dans une ambiance réaliste et oppressante.
             </p>
             <hr className="text-white opacity-20 my-2" />

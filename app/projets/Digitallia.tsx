@@ -10,7 +10,7 @@ return (
 
         <div
             className="absolute top-4 left-6 right-6 z-10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 text-white text-sm">
-            <p className="text-base whitespace-normal break-words">
+            <p className="text-sm xl:text-base whitespace-normal break-words">
                 Site vitrine développé et intégré pour l’agence Digitallia, spécialisée dans le développement d’IA. Réalisé en freelance sous WordPress avec Elementor Pro, et enrichi de nombreuses animations interactives via GSAP, pour une expérience utilisateur fluide et moderne.
             </p>
             <hr className="text-white opacity-20 my-2" />
