@@ -38,9 +38,9 @@ export default function SwiperRecommandation() {
                             </a>
                         </div>
                         <hr className="text-border my-2" />
-                        <p className="text-center text-sm relative mb-10">
+                        <p className="text-center text-sm relative mb-8">
                             <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
-                            <span className="text-lightgray block mx-6 py-6">
+                            <span className="text-lightgray block mx-6 py-4">
                                 J’ai eu la chance de travailler avec Théo pendant son stage en tant que développeur au sein de l'agence Marketify.
                                 Il a rapidement pris en main nos outils et a contribué de manière significative aux projets. Théo a une capacité à
                                 apprendre vite, à être sérieux, combinée à une attitude proactive, ce qui le rend vraiment prometteur dans le domaine
@@ -62,7 +62,32 @@ export default function SwiperRecommandation() {
                                     <p className="text-sm text-lightgray">Fondateur - Digitallia</p>
                                 </div>
                             </div>
-                            <a href="https://www.linkedin.com/in/theo-saly" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
+                            <a href="https://www.malt.fr/profile/theosaly" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
+                                <FaLink />
+                            </a>
+                        </div>
+                        <hr className="text-border my-2" />
+                        <p className="text-center text-sm relative">
+                            <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
+                            <span className="text-lightgray block mx-6 py-6">
+                                Théo est passé quelques mois chez nous et ses capacités nous ont convaincus. Son savoir faire en termes de développement web est indéniable. Il a travaillé sur du site sur mesure sans CMS, et sur du Wordpress / Woocommerce. Théo a développé le site web digitallia.fr pour nous en tant que Freelance cette fois, sur mesure, et nous sommes satisfaits du résultat. Je le recommande pour vos projets web.
+                            </span>
+                            <span className="absolute right-0 -bottom-6 text-5xl font-bold text-white leading-none">”</span>
+                        </p>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                        <div className="flex items-center justify-between mb-3">
+                            <div className="flex items-center gap-4">
+                                <div className="rounded-full border p-2 border-border bg-mediumgray" aria-label="Envoyer un email">
+                                    <IoPerson/>
+                                </div>
+                                <div>
+                                    <h3 className="text-sm font-semibold">Said L</h3>
+                                    <p className="text-sm text-lightgray">Fondateur - Digitallia</p>
+                                </div>
+                            </div>
+                            <a href="https://www.malt.fr/profile/theosaly" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
                                 <FaLink />
                             </a>
                         </div>
@@ -76,7 +101,56 @@ export default function SwiperRecommandation() {
                         </p>
                 </SwiperSlide>
                     
-                
+                <SwiperSlide>
+                        <div className="flex items-center justify-between mb-3">
+                            <div className="flex items-center gap-4">
+                                <div className="rounded-full border p-2 border-border bg-mediumgray" aria-label="Envoyer un email">
+                                    <IoPerson/>
+                                </div>
+                                <div>
+                                    <h3 className="text-sm font-semibold">Nathan M</h3>
+                                    <p className="text-sm text-lightgray">Photographe & Vidéaste</p>
+                                </div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/theo-saly" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
+                                <FaLink />
+                            </a>
+                        </div>
+                        <hr className="text-border my-2" />
+                        <p className="text-center text-sm relative">
+                            <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
+                            <span className="text-lightgray block mx-6 py-6">
+                                Collaborer avec Théo a été un réel plaisir. Il a rapidement compris ma demande et a conçu un site web au design moderne, parfaitement adapté à mes services de photographie et vidéographie. Je le recommande vivement à tout professionnel souhaitant booster sa visibilité en ligne.
+                            </span>
+                            <span className="absolute right-0 -bottom-6 text-5xl font-bold text-white leading-none">”</span>
+                        </p>
+                </SwiperSlide>
+
+                <SwiperSlide>
+                        <div className="flex items-center justify-between mb-3">
+                            <div className="flex items-center gap-4">
+                                <div className="rounded-full border p-2 border-border bg-mediumgray" aria-label="Envoyer un email">
+                                    <IoPerson/>
+                                </div>
+                                <div>
+                                    <h3 className="text-sm font-semibold">Cyriac K</h3>
+                                    <p className="text-sm text-lightgray">UX/UI Designer</p>
+                                </div>
+                            </div>
+                            <a href="https://www.linkedin.com/in/theo-saly" className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto" aria-label="Envoyer un email">
+                                <FaLink />
+                            </a>
+                        </div>
+                        <hr className="text-border my-2" />
+                        <p className="text-center text-sm relative">
+                            <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
+                            <span className="text-lightgray block mx-6 py-6">
+                                J’ai eu le plaisir de travailler avec Theo, qui a réalisé mon site internet pour mon activité d’auto-entrepreneur. Il a su de manière très efficace comprendre ma demande et mes besoins afin de concevoir un site ergonomique au design soigné. 
+                                Je le recommande vivement pour tous vos projets web. C’est toujours agréable de travailler avec des personnes qui font preuve de professionnalisme et d’un sens du relationnel. 
+                            </span>
+                            <span className="absolute right-0 -bottom-6 text-5xl font-bold text-white leading-none">”</span>
+                        </p>
+                </SwiperSlide>
 
         </Swiper>
     );

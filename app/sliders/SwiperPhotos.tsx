@@ -40,9 +40,10 @@ export default function SwiperPhotos() {
             className="h-100 pointer-events-none"
         >
             {images.map((img, idx) => (
-                <SwiperSlide className="pointer-events-none" key={idx}>
+                <SwiperSlide className="pointer-events-none relative" key={idx}>
+                    <div className="absolute top-0 left-0 w-full h-full bg-black opacity-40 z-20 rounded-2xl" />
                     <img
-                        className="h-100 w-fit object-cover rounded-2xl pointer-events-none"
+                        className="h-100 w-fit object-cover rounded-2xl pointer-events-none relative z-10"
                         src={`/images-mood/${img}`}
                         alt={img}
                     />

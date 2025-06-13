@@ -22,7 +22,7 @@ export default function SwiperLogos() {
                 clickable: true,
             }}
             modules={[Pagination, Autoplay]}
-            className="h-40"
+            className="h-40 -mt-8"
         >
             <SwiperSlide className="h-40">
                 <div className="flex justify-center items-center h-full">

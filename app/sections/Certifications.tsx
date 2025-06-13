@@ -9,10 +9,7 @@ return (
                     <p className="text-lightgray text-sm">2025</p>
                 </div>
                 <div>
-                    <div className="flex items-center gap-2">
-                        <img className="w-4" src="emojys/emojy-globe.png" alt="" />
-                        <h3 className="text-sm">Opquast</h3>
-                    </div>
+                    <h3 className="text-sm">Opquast</h3>
                     <p className="text-lightgray text-sm">Maîtrise règles et langage qualité web.</p>
                 </div>
             </div>
@@ -22,10 +19,7 @@ return (
                     <p className="text-lightgray text-sm">2024</p>
                 </div>
                 <div>
-                    <div className="flex items-center gap-2">
-                        <img className="w-4" src="emojys/emojy-lock.png" alt="" />
-                        <h3 className="text-sm">SecNum</h3>
-                    </div>
+                    <h3 className="text-sm">SecNum</h3>
                     <p className="text-lightgray text-sm">Cybersécurité, authentification, Internet, poste.</p>
                 </div>
             </div>
@@ -35,10 +29,7 @@ return (
                     <p className="text-lightgray text-sm">2023</p>
                 </div>
                 <div>
-                    <div className="flex items-center gap-2">
-                        <img className="w-4" src="emojys/emojy-car.png" alt="" />
-                        <h3 className="text-sm">Permis de conduire</h3>
-                    </div>
+                    <h3 className="text-sm">Permis de conduire</h3>
                     <p className="text-lightgray text-sm">Permis B</p>
                 </div>
             </div>

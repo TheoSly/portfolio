@@ -34,13 +34,7 @@ return (
             <span className="text-white"> innovantes</span> et
             <span className="text-white"> inspirantes</span>.
         </p>
-        <br />
-        <p className="text-base text-lightgray">
-            Je suis toujours ouvert à de nouvelles
-            <span className="text-white"> opportunités</span> et
-            <span className="text-white"> collaborations</span>. N'hésitez pas à me
-            <span className="text-white"> contacter</span> !
-        </p>
+        
         <br />
         <img className="w-40 mt-2" src="autres/signature.png" alt="" />
     </section>
