@@ -73,40 +73,7 @@ return (
         <p className="text-center text-sm relative">
             <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
             <span className="text-lightgray block mx-6 py-6">
-                Théo est passé quelques mois chez nous et ses capacités nous ont convaincus. Son savoir faire en termes
-                de développement web est indéniable. Il a travaillé sur du site sur mesure sans CMS, et sur du Wordpress
-                / Woocommerce. Théo a développé le site web digitallia.fr pour nous en tant que Freelance cette fois,
-                sur mesure, et nous sommes satisfaits du résultat. Je le recommande pour vos projets web.
-            </span>
-            <span className="absolute right-0 -bottom-6 text-5xl font-bold text-white leading-none">”</span>
-        </p>
-    </SwiperSlide>
-
-    <SwiperSlide>
-        <div className="flex items-center justify-between mb-3">
-            <div className="flex items-center gap-4">
-                <div className="rounded-full border p-2 border-border bg-mediumgray" aria-label="Envoyer un email">
-                    <IoPerson />
-                </div>
-                <div>
-                    <h3 className="text-sm font-semibold">Said L</h3>
-                    <p className="text-sm text-lightgray">Fondateur - Digitallia</p>
-                </div>
-            </div>
-            <a href="https://www.malt.fr/profile/theosaly"
-                className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
-                aria-label="Envoyer un email">
-                <FaLink />
-            </a>
-        </div>
-        <hr className="text-border my-2" />
-        <p className="text-center text-sm relative">
-            <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
-            <span className="text-lightgray block mx-6 py-6">
-                Théo est passé quelques mois chez nous et ses capacités nous ont convaincus. Son savoir faire en termes
-                de développement web est indéniable. Il a travaillé sur du site sur mesure sans CMS, et sur du Wordpress
-                / Woocommerce. Théo a développé le site web digitallia.fr pour nous en tant que Freelance cette fois,
-                sur mesure, et nous sommes satisfaits du résultat. Je le recommande pour vos projets web.
+                Théo a passé quelques mois chez nous, et ses compétences nous ont pleinement convaincus. Son savoir-faire en développement web est indéniable. Il a travaillé à la fois sur des sites sur mesure sans CMS et sur des projets utilisant WordPress / WooCommerce. Par la suite, il a réalisé le site web digitallia.fr pour nous en tant que freelance, entièrement sur mesure, et nous sommes très satisfaits du résultat. Je le recommande vivement pour vos projets web.
             </span>
             <span className="absolute right-0 -bottom-6 text-5xl font-bold text-white leading-none">”</span>
         </p>
