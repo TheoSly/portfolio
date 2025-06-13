@@ -1,4 +1,4 @@
-import SwiperLogos from '../SwiperLogos';
+import SwiperLogos from '../sliders/SwiperLogos';
 
 export default function Logos() {
 return (

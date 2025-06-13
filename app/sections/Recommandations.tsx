@@ -1,4 +1,4 @@
-import SwiperRecommandation from '../SwiperRecommandation';
+import SwiperRecommandation from '../sliders/SwiperRecommandation';
 
 export default function Recommandations() {
 return (

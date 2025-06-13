@@ -1,7 +1,6 @@
 'use client';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectFade } from 'swiper/modules';
 import 'swiper/css/effect-fade';
 
 // Import Swiper styles

@@ -1,4 +1,4 @@
-import SwiperPhotos from '../SwiperPhotos';
+import SwiperPhotos from '../sliders/SwiperPhotos';
 
 export default function Photos() {
 return (
