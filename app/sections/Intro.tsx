@@ -12,7 +12,7 @@ return (
         <p className="text-2xl">Je m'appelle Théo, développeur web fullstack à Strasbourg, spécialisé depuis 5 ans dans la création sur mesure de sites et d'applications.</p>
         <div className="flex justify-between items-center mt-4">
             <div className="flex justify-between items-center gap-2">
-                <a href="mailto:theo.saly@example.com"
+                <a href="mailto:contact@theo-saly.fr"
                     className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                     aria-label="Envoyer un email">
                     <FaEnvelope/>

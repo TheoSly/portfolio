@@ -20,7 +20,7 @@ export default function GithubCalendar() {
       ref={calendarRef}
       className="calendar-wrapper"
     >
-      Chargement du calendrier…
+      Chargement des contributions…
     </div>
   );
 }
