@@ -1,7 +1,7 @@
 "use client";
 
-import { ShaderFx } from "./ShaderFx";
-import { Playground } from "./Playground";
+import { ShaderFx } from "./Background/ShaderFx";
+import { Playground } from "./Background/Playground";
 import { useDeviceType } from "./hooks/useDeviceType"
 
 // Components Section
