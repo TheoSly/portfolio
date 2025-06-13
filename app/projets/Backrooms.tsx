@@ -45,12 +45,12 @@ return (
             <a href="#" target="_blank"
                 className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto inline-flex items-center justify-center"
                 aria-label="Visiter Digitallia.fr">
-                <FaLink />
+                <FaLink/>
             </a>
         </div>
 
         <img className="h-full object-cover object-top rounded-2xl w-full absolute top-0 left-0 opacity-80 z-0"
-            src="/app-backrooms.png" alt="" />
+            src="images-projet/app-backrooms.png" alt="" />
     </section>
 </>
 );

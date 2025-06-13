@@ -10,10 +10,10 @@ return (
             <a href="https://github.com/TheoSly" target="_bank"
                 className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                 aria-label="Envoyer un email">
-                <FaGithub />
+                <FaGithub/>
             </a>
         </div>
-        <GithubCalendar />
+        <GithubCalendar/>
     </section>
 </>
 );

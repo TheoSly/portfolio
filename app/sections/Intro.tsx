@@ -17,27 +17,27 @@ return (
                 <a href="mailto:theo.saly@example.com"
                     className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                     aria-label="Envoyer un email">
-                    <FaEnvelope />
+                    <FaEnvelope/>
                 </a>
                 <a href="tel:+33771874197"
                     className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                     aria-label="Envoyer un email">
-                    <FaPhone />
+                    <FaPhone/>
                 </a>
                 <a href="https://www.linkedin.com/in/theo-saly" target="_bank"
                     className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                     aria-label="Envoyer un email">
-                    <FaLinkedinIn />
+                    <FaLinkedinIn/>
                 </a>
                 <a href="https://www.malt.fr/profile/theosaly" target="_bank"
                     className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                     aria-label="Envoyer un email">
-                    <SiMalt />
+                    <SiMalt/>
                 </a>
                 <a href="https://github.com/TheoSly" target="_bank"
                     className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                     aria-label="Envoyer un email">
-                    <FaGithub />
+                    <FaGithub/>
                 </a>
 
             </div>
@@ -45,7 +45,7 @@ return (
                 <a href="/cv-theo-saly.pdf"
                     className="rounded-full border border-border py-2 px-4 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto flex items-center justify-center gap-2"
                     aria-label="Envoyer un email">
-                    <FaDownload />
+                    <FaDownload/>
                     <p className="text-sm">CV</p>
                 </a>
             </div>
