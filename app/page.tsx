@@ -167,6 +167,16 @@ return (
 
    {device === "tablet" && (
    <>
+      <div className="gradient-bg z-0">
+         <div className="gradients-container z-0">
+            <div className="g1"></div>
+            <div className="g2"></div>
+            <div className="g3"></div>
+            <div className="g4"></div>
+            <div className="g5"></div>
+         </div>
+      </div>
+
       <div
          className="flex flex-row justify-center items-start w-full h-full text-white pointer-events-auto overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pt-[2vw] md:pt-[1.5vw] xl:pt-[1vw]">
          <div className="flex flex-col w-1/2">
@@ -278,6 +288,16 @@ return (
 
    {device === "mobile" && (
    <>
+      
+      <div className="gradient-bg z-0">
+         <div className="gradients-container z-0">
+            <div className="g1"></div>
+            <div className="g2"></div>
+            <div className="g3"></div>
+            <div className="g4"></div>
+            <div className="g5"></div>
+         </div>
+      </div>
       <div
          className="flex flex-col w-full text-white pointer-events-auto overflow-y-hidden overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pt-[2vw] md:pt-[1.5vw] xl:pt-[1vw]">
          <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}

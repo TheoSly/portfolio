@@ -20,7 +20,6 @@
 }
 
 
-
 @keyframes plane-flight {
     0% {
         transform: translateX(0);
@@ -28,6 +27,18 @@
 
     100% {
         transform: translateX(50vw);
+    }
+}
+
+@media (max-width: 600px) {
+    @keyframes plane-flight {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(90vw);
+        }
     }
 }
 
@@ -43,6 +54,18 @@
 
     100% {
         transform: translateX(30vw);
+    }
+}
+
+@media (max-width: 600px) {
+    @keyframes cloud-flight {
+        0% {
+            transform: translateX(-60vw);
+        }
+
+        100% {
+            transform: translateX(100vw);
+        }
     }
 }
 
