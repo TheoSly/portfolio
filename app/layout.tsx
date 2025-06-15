@@ -19,7 +19,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <link rel="icon" href="/favicon.ico" />
          </head>
          <body className="scroll-smooth">
-            <main>
+            <main className="overflow-y-auto">
                {children}
             </main>
          </body>
