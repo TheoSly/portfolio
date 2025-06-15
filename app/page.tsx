@@ -51,11 +51,6 @@ return (
   </ShaderFx>
 </div>
 
-   
-   
-   
-
-   
    {device === "desktop" && (
       <>
          <div className="flex flex-row justify-between items-start w-full h-full text-white pointer-events-none overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pt-[2vw] md:pt-[1.5vw] xl:pt-[1vw]">

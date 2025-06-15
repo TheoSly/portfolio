@@ -19,7 +19,7 @@ export const Playground = () => {
    });
 
    setFluid({
-      densityDissipation: 0.99,
+      densityDissipation: 0.98,
       velocityDissipation: 0.99,
       splatRadius: 0.001,
       pressureIterations: 1,
