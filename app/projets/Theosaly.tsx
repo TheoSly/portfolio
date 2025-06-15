@@ -70,7 +70,7 @@ return (
             <a href="https://theo-saly.fr" target="_blank"
                 className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto inline-flex items-center justify-center"
                 aria-label="Visiter Digitallia.fr">
-                <FaLink/>
+                <FaLink className="fill-white" />
             </a>
         </div>
 
