@@ -11,16 +11,15 @@ const images = [
     'bar.jpg',
     'canne.jpg',
     'canne3.jpg',
+    'starsbourg.jpg',
     'croatie.jpg',
     'mer.jpg',
     'monaco.jpg',
     'ninho.jpg',
-    'paris.jpg',
     'rando.jpg',
     'rando2.jpg',
     'sdm2.jpg',
     'split.jpg',
-    'starsbourg.jpg',
     'venise.jpg',
 ];
 
@@ -43,7 +42,7 @@ export default function SwiperPhotos() {
                 <SwiperSlide className="pointer-events-none relative" key={idx}>
                     <div className="absolute top-0 left-0 w-full h-full bg-black pointer-events-none opacity-40 z-20 rounded-2xl" />
                     <img
-                        className="h-100 w-100 object-cover rounded-2xl pointer-events-none relative z-10"
+                        className="h-100 w-full object-cover rounded-2xl pointer-events-none relative z-10"
                         src={`/images-mood/${img}`}
                         alt={img}
                     />
