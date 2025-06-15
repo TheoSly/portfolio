@@ -9,7 +9,7 @@ export default function Intro() {
 return (
 <>
     <section className="md:min-h-70 xl:min-h-62 flex flex-col justify-between bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
-        <p className="text-2xl">Je m'appelle Théo, développeur web fullstack à Strasbourg, spécialisé depuis 5 ans dans la création sur mesure de sites et d'applications.</p>
+        <p className="text-2xl">Je m&apos;appelle Théo, développeur web fullstack à Strasbourg, spécialisé depuis 5 ans dans la création sur mesure de sites et d&apos;applications.</p>
         <div className="flex justify-between items-center mt-4">
             <div className="flex justify-between items-center gap-2">
                 <a href="mailto:contact@theo-saly.fr"

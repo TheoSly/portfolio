@@ -13,7 +13,7 @@ export const Playground = () => {
    const [updateFluid, setFluid, { output: fluid }] = useFluid({
       size,
       dpr: {
-         shader: 0.5,
+         shader: 0.2,
          fbo: 0.8,
       },
    });
@@ -33,7 +33,7 @@ export const Playground = () => {
       <>
          <mesh>
             <planeGeometry args={[2, 2]} />
-            <fxMaterial u_fx={fluid} u_color={[1, 1, 1]} key={FxMaterial.key} /> {/* Rouge */}
+            <fxMaterial u_fx={fluid} key={FxMaterial.key} />
          </mesh>
       </>
    );

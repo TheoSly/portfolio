@@ -2,7 +2,6 @@
 
 import { Suspense, useState } from "react";
 import { Canvas } from "@react-three/fiber";
-import { PerformanceMonitor } from "@react-three/drei";
 
 const Loading = () => {
    return (
@@ -41,19 +40,7 @@ export const ShaderFx = ({
             dpr={dpr}
             gl={{ preserveDrawingBuffer: preserveDrawingBuffer }}
             shadows={shadows}>
-            <PerformanceMonitor
-               onChange={({ factor }) => {
-                  if (preserveDrawingBuffer) {
-                     return;
-                  }
-                  if (!isDprUpdate) {
-                     return;
-                  }
-                  console.log(`dpr:${dpr}`);
-                  setDpr(Math.round((0.5 + 1.5 * factor) * 10) / 10);
-               }}>
-               {children}
-            </PerformanceMonitor>
+            {children}
          </Canvas>
       </Suspense>
    );

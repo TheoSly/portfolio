@@ -38,7 +38,7 @@ return (
         <p className="text-center text-sm relative mb-8">
             <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
             <span className="text-lightgray block mx-6 py-4">
-                J’ai eu la chance de travailler avec Théo pendant son stage en tant que développeur au sein de l'agence
+                J’ai eu la chance de travailler avec Théo pendant son stage en tant que développeur au sein de l&apos;agence
                 Marketify.
                 Il a rapidement pris en main nos outils et a contribué de manière significative aux projets. Théo a une
                 capacité à

@@ -1,7 +1,7 @@
 "use client";
 
-import { ShaderFx } from "./Background/ShaderFx";
-import { Playground } from "./Background/Playground";
+import { ShaderFx } from "./background/ShaderFx";
+import { Playground } from "./background/Playground";
 import { useDeviceType } from "./hooks/useDeviceType"
 import { motion } from "framer-motion";
 

@@ -29,7 +29,7 @@ return (
                     <p className="text-lightgray text-xs xl:text-sm">2023 - Auj‎ </p>
                 </div>
                 <div>
-                    <h3 className="text-xs xl:text-sm">‎ ‎ ‎ Conseiller en prêt-à-porter - Levi's</h3>
+                    <h3 className="text-xs xl:text-sm">‎ ‎ ‎ Conseiller en prêt-à-porter - Levi&apos;s</h3>
                     <p className="text-lightgray text-xs xl:text-sm">‎ ‎ ‎ CDI - Vendenheim</p>
                 </div>
             </div>
