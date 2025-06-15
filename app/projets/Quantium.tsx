@@ -55,7 +55,7 @@ return (
         </div>
 
         <img className="h-full object-cover object-top rounded-2xl w-full absolute top-0 left-0 opacity-80 z-0"
-            src="images-projet/website-quantium.png" alt="" />
+            src="images-projet/website-quantium.jpg" alt="" />
     </section>
 </>
 );
