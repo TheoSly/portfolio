@@ -43,7 +43,7 @@ export default function SwiperPhotos() {
                 <SwiperSlide className="pointer-events-none relative" key={idx}>
                     <div className="absolute top-0 left-0 w-full h-full bg-black pointer-events-none opacity-40 z-20 rounded-2xl" />
                     <img
-                        className="h-100 w-fit object-cover rounded-2xl pointer-events-none relative z-10"
+                        className="h-100 w-100 object-cover rounded-2xl pointer-events-none relative z-10"
                         src={`/images-mood/${img}`}
                         alt={img}
                     />

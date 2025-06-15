@@ -245,7 +245,7 @@ return (
 
    {device === "mobile" && (
    <>
-      <div className="flex flex-col w-full text-white pointer-events-none overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pt-[2vw] md:pt-[1.5vw] xl:pt-[1vw]">
+      <div className="flex flex-col w-full text-white pointer-events-auto overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pt-[2vw] md:pt-[1.5vw] xl:pt-[1vw]">
          <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: 0 }} viewport={{ once: true, amount: 0 }}>
             <Intro/>
          </motion.div>
@@ -292,7 +292,7 @@ return (
          </div>
       </div>
 
-      <div className="flex flex-col w-full text-white pointer-events-none overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pb-[2vw] md:pb-[1.5vw] xl:pb-[1vw]">
+      <div className="flex flex-col w-full text-white pointer-events-auto overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pb-[2vw] md:pb-[1.5vw] xl:pb-[1vw]">
          <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
             <Technologies/>
          </motion.div>
