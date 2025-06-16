@@ -1,3 +1,4 @@
+"use client";
 import "./css/main.css";
 import "./css/map.css";
 import "./css/git.css";
@@ -9,9 +10,12 @@ import "./css/scrollbar.css";
 
 import "./globals.css";
 
-import Loader from "./loader/loader";
+import Loader from "./loader/Loader";
+import { useState } from "react";
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+   const [isLoaded, setIsLoaded] = useState(false);
+
    return (
       <html lang="fr" className="bg-darkgray touch-none select-none">
          <head>
@@ -24,10 +28,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <link rel="icon" href="/favicon.ico" />
          </head>
          <body className="scroll-smooth">
-            <Loader />
-            <main className="overflow-y-auto">
-               {children}
-            </main>
+            {!isLoaded && <Loader onFinish={() => setIsLoaded(true)} />}
+            {isLoaded && (
+              <main className="overflow-y-auto">
+                {children}
+              </main>
+            )}
          </body>
       </html>
    );

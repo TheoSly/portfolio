@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 
-export default function Loader() {
+export default function Loader({ onFinish }: { onFinish?: () => void }) {
   const [visible, setVisible] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
 
@@ -16,13 +16,14 @@ export default function Loader() {
       // Supprimer le loader après la transition (400ms)
       setTimeout(() => {
         setVisible(false);
+        if (onFinish) onFinish(); // Appelle le callback ici
       }, 400);
-    }, 0);
+    }, 2000);
 
     return () => {
       clearTimeout(timer);
     };
-  }, []);
+  }, [onFinish]);
 
   if (!visible) return null;
 

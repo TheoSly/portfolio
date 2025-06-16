@@ -35,7 +35,7 @@ return (
             </a>
         </div>
         <hr className="text-border my-2" />
-        <p className="text-center text-sm relative mb-8">
+        <p className="text-center text-sm relative mb-18">
             <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
             <span className="text-lightgray block mx-6 py-4">
                 J’ai eu la chance de travailler avec Théo pendant son stage en tant que développeur au sein de l&apos;agence
@@ -47,6 +47,34 @@ return (
                 du développement. Il a démontré des compétences techniques solides et une grande force d’adaptation. Je
                 vous le recommande
                 chaleureusement.
+            </span>
+            <span className="absolute right-0 -bottom-6 text-5xl font-bold text-white leading-none">”</span>
+        </p>
+    </SwiperSlide>
+
+    <SwiperSlide>
+        <div className="flex items-center justify-between mb-3">
+            <div className="flex items-center gap-4">
+                <div className="rounded-full border p-2 border-border bg-mediumgray" aria-label="Envoyer un email">
+                    <IoPerson />
+                </div>
+                <div>
+                    <h3 className="text-sm font-semibold">Juliette K</h3>
+                    <p className="text-sm text-lightgray">Responsable - Levi&apos;s Store</p>
+                </div>
+            </div>
+            <a href="https://www.malt.fr/profile/theosaly"
+                className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
+                aria-label="Envoyer un email">
+                <FaLink />
+            </a>
+        </div>
+        <hr className="text-border my-2" />
+        <p className="text-center text-sm relative">
+            <span className="absolute left-0 top-0 text-5xl font-bold text-white leading-none">“</span>
+            <span className="text-lightgray block mx-6 py-6">
+                J’ai eu la chance d’avoir Théo dans mon équipe. C’est une personne pleine de vie, avec beaucoup de réflexions et l’envie de toujours vouloir progresser.
+                En plus de ses questionnements et de son intéressement dans tout ce qu’il entreprend; il parvient toujours à trouver ce dont les prospects ont besoin. La compréhension de la demande client, l’acheminement vers la vente, la fidélisation de celui-ci et les feedbacks reçus ont juste démontrer à quel point c’est un bon élément dans une équipe. Je suis vraiment heureuse d’avoir pu collaborer avec lui et vous le recommande vivement. 
             </span>
             <span className="absolute right-0 -bottom-6 text-5xl font-bold text-white leading-none">”</span>
         </p>

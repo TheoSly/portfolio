@@ -40,60 +40,66 @@ export default function Page() {
   // --- Auto-scroll logic for horizontal scroll container ---
   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = React.useState(false);
-  const [hasScrolled, setHasScrolled] = React.useState(false);
 
   React.useEffect(() => {
     const container = scrollContainerRef.current;
     if (!container) return;
 
     let interval: number | null = null;
-    let timeout: number | null = null;
-    let observer: IntersectionObserver | null = null;
 
     const startAutoScroll = () => {
+      if (interval) return; // éviter doublon
       interval = window.setInterval(() => {
         if (!isHovered && container.scrollLeft < container.scrollWidth - container.clientWidth) {
           container.scrollLeft += 1;
         }
-      }, 5);
+      }, 10);
     };
 
-    const handleScrollStart = () => {
-      if (!hasScrolled) {
-        timeout = window.setTimeout(() => {
-          startAutoScroll();
-          setHasScrolled(true);
-        }, 1000);
-      } else {
-        if (!isHovered) {
-          startAutoScroll();
-        }
+    const stopAutoScroll = () => {
+      if (interval) {
+        window.clearInterval(interval);
+        interval = null;
       }
     };
 
+    const handleUserInteraction = () => {
+      stopAutoScroll();
+    };
+
     if (device === "desktop") {
-      observer = new IntersectionObserver(
+      const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              handleScrollStart();
+              startAutoScroll();
+            } else {
+              stopAutoScroll();
             }
           });
         },
         { threshold: 0.1 }
       );
       observer.observe(container);
+      return () => {
+        observer.disconnect();
+        stopAutoScroll();
+      };
     } else {
-      // Auto-scroll immediately on tablet and mobile
-      handleScrollStart();
-    }
+      // Sur mobile/tablette : démarrer le scroll directement
+      startAutoScroll();
 
-    return () => {
-      if (interval) window.clearInterval(interval);
-      if (timeout) window.clearTimeout(timeout);
-      if (observer && container) observer.unobserve(container);
-    };
-  }, [isHovered, hasScrolled, device]);
+      // Arrêter le scroll si l'utilisateur touche ou scrolle
+      container.addEventListener("touchstart", handleUserInteraction);
+      container.addEventListener("wheel", handleUserInteraction);
+
+      return () => {
+        stopAutoScroll();
+        container.removeEventListener("touchstart", handleUserInteraction);
+        container.removeEventListener("wheel", handleUserInteraction);
+      };
+    }
+  }, [isHovered, device]);
 
   return (
     <>
@@ -322,7 +328,7 @@ export default function Page() {
       </div>
 
       <div
-         className="flex flex-row justify-center items-start w-full h-full text-white pointer-events-auto overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pb-[2vw] md:pb-[1.5vw] xl:pb-[1vw]">
+         className="flex flex-row justify-center items-start w-full h-full text-white pointer-events-auto overflow-y-hidden overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pb-[2vw] md:pb-[1.5vw] xl:pb-[1vw]">
          <div className="flex flex-col w-1/2">
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
