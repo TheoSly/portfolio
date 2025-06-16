@@ -43,36 +43,53 @@ export default function Page() {
   const [hasScrolled, setHasScrolled] = React.useState(false);
 
   React.useEffect(() => {
-  const container = scrollContainerRef.current;
-  if (!container) return;
+    const container = scrollContainerRef.current;
+    if (!container) return;
 
-  let interval: NodeJS.Timer | null = null;
-  let timeout: NodeJS.Timeout | null = null;
+    let interval: NodeJS.Timer | null = null;
+    let timeout: NodeJS.Timeout | null = null;
+    let observer: IntersectionObserver | null = null;
 
-  if (!hasScrolled) {
-    timeout = setTimeout(() => {
-      interval = setInterval(() => {
-        if (!isHovered && container.scrollLeft < container.scrollWidth - container.clientWidth) {
-          container.scrollLeft += 1;
+    const handleScrollStart = () => {
+      if (!hasScrolled) {
+        timeout = setTimeout(() => {
+          interval = setInterval(() => {
+            if (!isHovered && container.scrollLeft < container.scrollWidth - container.clientWidth) {
+              container.scrollLeft += 1;
+            }
+          }, 5);
+          setHasScrolled(true);
+        }, 1000);
+      } else {
+        if (!isHovered) {
+          interval = setInterval(() => {
+            if (container.scrollLeft < container.scrollWidth - container.clientWidth) {
+              container.scrollLeft += 1;
+            }
+          }, 5);
         }
-      }, 5);
-      setHasScrolled(true);
-    }, 1000);
-  } else {
-    if (!isHovered) {
-      interval = setInterval(() => {
-        if (container.scrollLeft < container.scrollWidth - container.clientWidth) {
-          container.scrollLeft += 1;
-        }
-      }, 5);
-    }
-  }
+      }
+    };
 
-  return () => {
-    if (interval) clearInterval(interval);
-    if (timeout) clearTimeout(timeout);
-  };
-}, [isHovered, hasScrolled]);
+    observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            handleScrollStart();
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    observer.observe(container);
+
+    return () => {
+      if (interval) clearInterval(interval);
+      if (timeout) clearTimeout(timeout);
+      if (observer && container) observer.unobserve(container);
+    };
+  }, [isHovered, hasScrolled]);
 
   return (
     <>
@@ -137,7 +154,7 @@ export default function Page() {
          onMouseLeave={() => setIsHovered(false)}
          className="relative w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap scroll-smooth pointer-events-auto scrollbar-custom"
          >
-         <div className="flex flex-row w-max w-[100vw]  z-10">
+         <div className="flex flex-row w-max w-[100vw] overflow-y-hidden">
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5, delay: 0 }} viewport={{ once: true, amount: 0.1 }}>
                <Digitallia />
@@ -275,7 +292,7 @@ export default function Page() {
          onTouchCancel={() => setIsHovered(false)}
          className="w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap scroll-smooth pointer-events-auto"
       >
-         <div className="flex flex-row w-max w-[100vw]">
+         <div className="flex flex-row w-max w-[100vw] overflow-y-hidden">
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5, delay: 0 }} viewport={{ once: true, amount: 0.1 }}>
                <Digitallia />
@@ -404,7 +421,7 @@ export default function Page() {
          onTouchCancel={() => setIsHovered(false)}
          className="relative w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap scroll-smooth pointer-events-auto"
          >
-         <div className="flex flex-row w-max w-[100vw]">
+         <div className="flex flex-row w-max w-[100vw] overflow-y-hidden">
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
                <Digitallia />
