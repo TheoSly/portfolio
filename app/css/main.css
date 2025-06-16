@@ -2,3 +2,42 @@ main {
   width: 100vw;
 }
 
+.loader {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader svg {
+  width: 120px;
+  height: 120px;
+  transform: scale(0.8);
+  animation: zoom 2.5s ease-in-out forwards;
+}
+
+.logo-path {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: draw 2s ease-in-out forwards;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes zoom {
+  to {
+    transform: scale(1);
+  }
+}
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}

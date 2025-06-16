@@ -46,50 +46,54 @@ export default function Page() {
     const container = scrollContainerRef.current;
     if (!container) return;
 
-    let interval: NodeJS.Timer | null = null;
-    let timeout: NodeJS.Timeout | null = null;
+    let interval: number | null = null;
+    let timeout: number | null = null;
     let observer: IntersectionObserver | null = null;
+
+    const startAutoScroll = () => {
+      interval = window.setInterval(() => {
+        if (!isHovered && container.scrollLeft < container.scrollWidth - container.clientWidth) {
+          container.scrollLeft += 1;
+        }
+      }, 5);
+    };
 
     const handleScrollStart = () => {
       if (!hasScrolled) {
-        timeout = setTimeout(() => {
-          interval = setInterval(() => {
-            if (!isHovered && container.scrollLeft < container.scrollWidth - container.clientWidth) {
-              container.scrollLeft += 1;
-            }
-          }, 5);
+        timeout = window.setTimeout(() => {
+          startAutoScroll();
           setHasScrolled(true);
         }, 1000);
       } else {
         if (!isHovered) {
-          interval = setInterval(() => {
-            if (container.scrollLeft < container.scrollWidth - container.clientWidth) {
-              container.scrollLeft += 1;
-            }
-          }, 5);
+          startAutoScroll();
         }
       }
     };
 
-    observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            handleScrollStart();
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    observer.observe(container);
+    if (device === "desktop") {
+      observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              handleScrollStart();
+            }
+          });
+        },
+        { threshold: 0.1 }
+      );
+      observer.observe(container);
+    } else {
+      // Auto-scroll immediately on tablet and mobile
+      handleScrollStart();
+    }
 
     return () => {
-      if (interval) clearInterval(interval);
-      if (timeout) clearTimeout(timeout);
+      if (interval) window.clearInterval(interval);
+      if (timeout) window.clearTimeout(timeout);
       if (observer && container) observer.unobserve(container);
     };
-  }, [isHovered, hasScrolled]);
+  }, [isHovered, hasScrolled, device]);
 
   return (
     <>

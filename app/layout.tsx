@@ -9,6 +9,8 @@ import "./css/scrollbar.css";
 
 import "./globals.css";
 
+import Loader from "./loader/loader";
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
    return (
       <html lang="fr" className="bg-darkgray touch-none select-none">
@@ -22,6 +24,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <link rel="icon" href="/favicon.ico" />
          </head>
          <body className="scroll-smooth">
+            <Loader />
             <main className="overflow-y-auto">
                {children}
             </main>
