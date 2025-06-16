@@ -3,6 +3,8 @@ import "./css/map.css";
 import "./css/git.css";
 import "./css/slider.css";
 import "./css/hand-animation.css";
+import "./css/background.css";
+import "./css/scrollbar.css";
 
 
 import "./globals.css";

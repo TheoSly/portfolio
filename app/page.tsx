@@ -35,20 +35,47 @@ import Theosaly from "./projets/Theosaly";
 
 
 export default function Page() {
-const device = useDeviceType();
+  const device = useDeviceType();
 
-const [hovered, setHovered] = React.useState(false);
-const [visible, setVisible] = React.useState(true);
+  // --- Auto-scroll logic for horizontal scroll container ---
+  const scrollContainerRef = React.useRef<HTMLDivElement>(null);
+  const [isHovered, setIsHovered] = React.useState(false);
+  const [hasScrolled, setHasScrolled] = React.useState(false);
 
-React.useEffect(() => {
-  if (hovered) {
-    const timeout = setTimeout(() => setVisible(false), 2000);
-    return () => clearTimeout(timeout);
+  React.useEffect(() => {
+  const container = scrollContainerRef.current;
+  if (!container) return;
+
+  let interval: NodeJS.Timer | null = null;
+  let timeout: NodeJS.Timeout | null = null;
+
+  if (!hasScrolled) {
+    timeout = setTimeout(() => {
+      interval = setInterval(() => {
+        if (!isHovered && container.scrollLeft < container.scrollWidth - container.clientWidth) {
+          container.scrollLeft += 1;
+        }
+      }, 5);
+      setHasScrolled(true);
+    }, 1000);
+  } else {
+    if (!isHovered) {
+      interval = setInterval(() => {
+        if (container.scrollLeft < container.scrollWidth - container.clientWidth) {
+          container.scrollLeft += 1;
+        }
+      }, 5);
+    }
   }
-}, [hovered]);
 
-return (
-<>
+  return () => {
+    if (interval) clearInterval(interval);
+    if (timeout) clearTimeout(timeout);
+  };
+}, [isHovered, hasScrolled]);
+
+  return (
+    <>
    {device === "desktop" && (
    <>
       <div className="pointer-events-none z-0" style={{
@@ -104,35 +131,12 @@ return (
          </div>
       </div>
 
-      <div className="relative w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap">
-            {visible && (
-            <motion.div
-               initial={{ opacity: 0 }}
-               whileInView={{ opacity: 1 }}
-               transition={{ duration: 0.8, delay: 1.5 }}
-               viewport={{ once: true, amount: 0.1 }}
-               style={{ position: "absolute", zIndex: 50, width: "100%", height: "100%" }}
-            >
-               <div
-                  className="bg-gradient-to-t from-black/10 via-black/60 to-black/10 w-full h-full flex items-center justify-center transition-opacity duration-1000 cursor-pointer"
-                  onMouseEnter={() => setHovered(true)}
-               >
-                  <div className="px-3 py-1 rounded text-center flex items-center gap-4">
-                  <div className="chevrons">
-                     <span>&gt;</span>
-                     <span>&gt;</span>
-                     <span>&gt;</span>
-                  </div>
-                  <span className="text-xl text-white brightness">Faites défiler pour découvrir mes projets</span>
-                  <div className="chevrons">
-                     <span>&gt;</span>
-                     <span>&gt;</span>
-                     <span>&gt;</span>
-                  </div>
-                  </div>
-               </div>
-            </motion.div>
-            )}
+      <div
+         ref={scrollContainerRef}
+         onMouseEnter={() => setIsHovered(true)}
+         onMouseLeave={() => setIsHovered(false)}
+         className="relative w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap scroll-smooth pointer-events-auto scrollbar-custom"
+         >
          <div className="flex flex-row w-max w-[100vw]  z-10">
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5, delay: 0 }} viewport={{ once: true, amount: 0.1 }}>
@@ -149,7 +153,11 @@ return (
                <Quantium />
             </motion.div>
 
-            <Salink />
+            <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.5, delay: 0.45 }} viewport={{ once: true, amount: 0 }}>
+               <Salink />
+            </motion.div>
+
             <Backrooms />
             <Aquabion />
             <Cuxdesign />
@@ -258,7 +266,15 @@ return (
          </div>
       </div>
 
-      <div className="w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap">
+      <div
+         ref={scrollContainerRef}
+         onMouseEnter={() => setIsHovered(true)}
+         onMouseLeave={() => setIsHovered(false)}
+         onTouchStart={() => setIsHovered(true)}
+         onTouchEnd={() => setIsHovered(false)}
+         onTouchCancel={() => setIsHovered(false)}
+         className="w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap scroll-smooth pointer-events-auto"
+      >
          <div className="flex flex-row w-max w-[100vw]">
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5, delay: 0 }} viewport={{ once: true, amount: 0.1 }}>
@@ -270,7 +286,11 @@ return (
                <Meteor />
             </motion.div>
 
-            <Quantium />
+            <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.5, delay: 0.3 }} viewport={{ once: true, amount: 0 }}>
+               <Quantium />
+            </motion.div>
+
             <Salink />
             <Backrooms />
             <Aquabion />
@@ -375,41 +395,26 @@ return (
          </motion.div>
       </div>
 
-      <div className="relative w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap">
-         {visible && (
-            <motion.div
-               initial={{ opacity: 0 }}
-               whileInView={{ opacity: 1 }}
-               transition={{ duration: 0.8, delay: 1.5 }}
-               viewport={{ once: true, amount: 0.1 }}
-               style={{ position: "absolute", inset: 0, zIndex: 50, width: "100vw", height: "100%" }}
-               onAnimationComplete={() => {
-                  if (hovered) setVisible(false);
-               }}
-            >
-               <div
-                  className="bg-gradient-to-t from-black/10 via-black/60 to-black/10 w-full h-full flex items-center justify-center transition-opacity duration-1000 cursor-pointer"
-                  onMouseEnter={() => setHovered(true)}
-               >
-                  <div className="px-3 py-1 rounded text-center flex items-center gap-4">
-                     <span className="text-sm text-white brightness">Faites défiler pour découvrir mes projets</span>
-                     <div className="chevrons">
-                        <span>&gt;</span>
-                        <span>&gt;</span>
-                        <span>&gt;</span>
-                     </div>
-                  </div>
-               </div>
-            </motion.div>
-         )}
-         
+         <div
+         ref={scrollContainerRef}
+         onMouseEnter={() => setIsHovered(true)}
+         onMouseLeave={() => setIsHovered(false)}
+         onTouchStart={() => setIsHovered(true)}
+         onTouchEnd={() => setIsHovered(false)}
+         onTouchCancel={() => setIsHovered(false)}
+         className="relative w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap scroll-smooth pointer-events-auto"
+         >
          <div className="flex flex-row w-max w-[100vw]">
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
                <Digitallia />
             </motion.div>
 
-            <Meteor />
+            <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
+               transition={{ duration: 0.5, delay: 0.15 }} viewport={{ once: true, amount: 0 }}>
+               <Meteor />
+            </motion.div>
+
             <Quantium />
             <Salink />
             <Backrooms />
