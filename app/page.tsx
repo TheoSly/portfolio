@@ -105,34 +105,34 @@ return (
       </div>
 
       <div className="relative w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap">
-         {visible && (
-           <motion.div
-             initial={{ opacity: 0 }}
-             whileInView={{ opacity: 1 }}
-             transition={{ duration: 0.8, delay: 1.5 }}
-             viewport={{ once: true, amount: 0.1 }}
-             style={{ position: "absolute", zIndex: 50, width: "100%", height: "100%" }}
-           >
-             <div
-               className="bg-gradient-to-t from-black/10 via-black/60 to-black/10 w-full h-full flex items-center justify-center transition-opacity duration-1000 cursor-pointer"
-               onMouseEnter={() => setHovered(true)}
-             >
-               <div className="px-3 py-1 rounded text-center flex items-center gap-4">
-                 <div className="chevrons">
-                   <span>&gt;</span>
-                   <span>&gt;</span>
-                   <span>&gt;</span>
-                 </div>
-                 <span className="text-xl text-white brightness">Faites défiler pour découvrir mes projets</span>
-                 <div className="chevrons">
-                   <span>&gt;</span>
-                   <span>&gt;</span>
-                   <span>&gt;</span>
-                 </div>
+            {visible && (
+            <motion.div
+               initial={{ opacity: 0 }}
+               whileInView={{ opacity: 1 }}
+               transition={{ duration: 0.8, delay: 1.5 }}
+               viewport={{ once: true, amount: 0.1 }}
+               style={{ position: "absolute", zIndex: 50, width: "100%", height: "100%" }}
+            >
+               <div
+                  className="bg-gradient-to-t from-black/10 via-black/60 to-black/10 w-full h-full flex items-center justify-center transition-opacity duration-1000 cursor-pointer"
+                  onMouseEnter={() => setHovered(true)}
+               >
+                  <div className="px-3 py-1 rounded text-center flex items-center gap-4">
+                  <div className="chevrons">
+                     <span>&gt;</span>
+                     <span>&gt;</span>
+                     <span>&gt;</span>
+                  </div>
+                  <span className="text-xl text-white brightness">Faites défiler pour découvrir mes projets</span>
+                  <div className="chevrons">
+                     <span>&gt;</span>
+                     <span>&gt;</span>
+                     <span>&gt;</span>
+                  </div>
+                  </div>
                </div>
-             </div>
-           </motion.div>
-         )}
+            </motion.div>
+            )}
          <div className="flex flex-row w-max w-[100vw]  z-10">
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5, delay: 0 }} viewport={{ once: true, amount: 0.1 }}>

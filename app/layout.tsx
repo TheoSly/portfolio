@@ -2,6 +2,7 @@ import "./css/main.css";
 import "./css/map.css";
 import "./css/git.css";
 import "./css/slider.css";
+import "./css/hand-animation.css";
 
 
 import "./globals.css";

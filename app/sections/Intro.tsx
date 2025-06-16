@@ -9,7 +9,11 @@ export default function Intro() {
 return (
 <>
     <section className="md:min-h-70 xl:min-h-62 flex flex-col justify-between bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
-        <p className="text-2xl">Je m&apos;appelle Théo, développeur web fullstack à Strasbourg, spécialisé depuis 5 ans dans la création sur mesure de sites et d&apos;applications.</p>
+        
+        <p className="text-2xl">
+            <img src="emojys/emojy-hand.png" alt="Salut" className="inline w-6 h-6 mr-2 align-text-bottom mb-0.5 animatewave pointer-events-auto" />
+            Salut, moi c&apos;est Théo, développeur web sur Strasbourg, spécialisé depuis 5 ans dans la création de sites et d&apos;applications web sur mesure.
+        </p>
         <div className="flex justify-between items-center mt-4">
             <div className="flex justify-between items-center gap-2">
                 <a href="mailto:contact@theo-saly.fr"

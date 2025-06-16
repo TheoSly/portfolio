@@ -4,12 +4,12 @@ return (
     <section className="md:min-h-158 xl:min-h-140 flex flex-col justify-between bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
         <h2 className="text-lg mb-2">À PROPOS DE MOI</h2>
         <p className="text-base text-lightgray mb-3">
-            Je m’appelle
-            <span className="text-white"> Théo</span>, âgé de
+            Salut, je m’appelle
+            <span className="text-white"> Théo</span>, je suis âgé de
             <span className="text-white"> 20 ans</span> basé à
-            <span className="text-white"> Strasbourg</span>. Passionné par le
+            <span className="text-white"> Strasbourg</span> et passionné par le
             <span className="text-white"> web</span> et les
-            <span className="text-white"> nouvelles technologies</span>, j’ai eu l’opportunité de travailler sur de
+            <span className="text-white"> nouvelles technologies</span>. J’ai eu l’opportunité de travailler sur de
             nombreux
             <span className="text-white"> projets variés</span> dans des
             <span className="text-white"> secteurs divers</span>. Mon expérience m’a permis de collaborer avec des
