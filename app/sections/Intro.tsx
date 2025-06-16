@@ -5,6 +5,17 @@ import { SiMalt } from "react-icons/si";
 export default function Intro() {
     const [showCV, setShowCV] = useState(true);
 
+    const handleMouseEnter = () => {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            setShowCV(false);
+        }
+    };
+    const handleMouseLeave = () => {
+        if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+            setShowCV(true);
+        }
+    };
+
     return (
         <>
             <section className="md:min-h-70 xl:min-h-62 flex flex-col justify-between bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
@@ -18,8 +29,8 @@ export default function Intro() {
                             href="mailto:contact@theo-saly.fr"
                             className="mail group flex items-center justify-start w-9 hover:w-44 transition-all duration-300 rounded-full border border-border bg-mediumgray pointer-events-auto pl-[9px] h-9 overflow-hidden"
                             aria-label="Envoyer un email à contact@theo-saly.fr"
-                            onMouseEnter={() => setShowCV(false)}
-                            onMouseLeave={() => setShowCV(true)}
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
                         >
                             <div className="w-9 h-9 flex items-center justify-start transition-all duration-300">
                                 <FaEnvelope />
@@ -32,8 +43,8 @@ export default function Intro() {
                             href="tel:0771874197"
                             className="mail group flex items-center justify-start w-9 hover:w-35 transition-all duration-300 rounded-full border border-border bg-mediumgray pointer-events-auto pl-[9px] h-9 overflow-hidden"
                             aria-label="Appeler le 07 71 87 41 97"
-                            onMouseEnter={() => setShowCV(false)}
-                            onMouseLeave={() => setShowCV(true)}
+                            onMouseEnter={handleMouseEnter}
+                            onMouseLeave={handleMouseLeave}
                         >
                             <div className="w-9 h-9 flex items-center justify-start transition-all duration-300">
                                 <FaPhone />

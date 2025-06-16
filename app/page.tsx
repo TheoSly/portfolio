@@ -40,66 +40,60 @@ export default function Page() {
   // --- Auto-scroll logic for horizontal scroll container ---
   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
   const [isHovered, setIsHovered] = React.useState(false);
+  const [hasScrolled, setHasScrolled] = React.useState(false);
 
   React.useEffect(() => {
     const container = scrollContainerRef.current;
     if (!container) return;
 
     let interval: number | null = null;
+    let timeout: number | null = null;
+    let observer: IntersectionObserver | null = null;
 
     const startAutoScroll = () => {
-      if (interval) return; // éviter doublon
       interval = window.setInterval(() => {
         if (!isHovered && container.scrollLeft < container.scrollWidth - container.clientWidth) {
           container.scrollLeft += 1;
         }
-      }, 10);
+      }, 5);
     };
 
-    const stopAutoScroll = () => {
-      if (interval) {
-        window.clearInterval(interval);
-        interval = null;
+    const handleScrollStart = () => {
+      if (!hasScrolled) {
+        timeout = window.setTimeout(() => {
+          startAutoScroll();
+          setHasScrolled(true);
+        }, 1000);
+      } else {
+        if (!isHovered) {
+          startAutoScroll();
+        }
       }
     };
 
-    const handleUserInteraction = () => {
-      stopAutoScroll();
-    };
-
-    if (device === "desktop") {
-      const observer = new IntersectionObserver(
+    if (device === "desktop" || device === "tablet") {
+      observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              startAutoScroll();
-            } else {
-              stopAutoScroll();
+              handleScrollStart();
             }
           });
         },
         { threshold: 0.1 }
       );
       observer.observe(container);
-      return () => {
-        observer.disconnect();
-        stopAutoScroll();
-      };
     } else {
-      // Sur mobile/tablette : démarrer le scroll directement
-      startAutoScroll();
-
-      // Arrêter le scroll si l'utilisateur touche ou scrolle
-      container.addEventListener("touchstart", handleUserInteraction);
-      container.addEventListener("wheel", handleUserInteraction);
-
-      return () => {
-        stopAutoScroll();
-        container.removeEventListener("touchstart", handleUserInteraction);
-        container.removeEventListener("wheel", handleUserInteraction);
-      };
+      // Auto-scroll immediately on tablet and mobile
+      handleScrollStart();
     }
-  }, [isHovered, device]);
+
+    return () => {
+      if (interval) window.clearInterval(interval);
+      if (timeout) window.clearTimeout(timeout);
+      if (observer && container) observer.unobserve(container);
+    };
+  }, [isHovered, hasScrolled, device]);
 
   return (
     <>
@@ -241,16 +235,15 @@ export default function Page() {
 
    {device === "tablet" && (
    <>
-      <div className="gradient-bg z-0">
-         <div className="gradients-container z-0">
-            <div className="g1"></div>
-            <div className="g2"></div>
-            <div className="g3"></div>
-            <div className="g4"></div>
-            <div className="g5"></div>
-         </div>
+      <div className="pointer-events-none z-0" style={{
+         position: "fixed",
+         width: "100vw",
+         height: "100svh",
+      }}>
+         <ShaderFx>
+            <Playground />
+         </ShaderFx>
       </div>
-
       <div
          className="flex flex-row justify-center items-start w-full h-full text-white pointer-events-auto overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pt-[2vw] md:pt-[1.5vw] xl:pt-[1vw]">
          <div className="flex flex-col w-1/2">
@@ -375,15 +368,6 @@ export default function Page() {
    {device === "mobile" && (
    <>
       
-      <div className="gradient-bg z-0">
-         <div className="gradients-container z-0">
-            <div className="g1"></div>
-            <div className="g2"></div>
-            <div className="g3"></div>
-            <div className="g4"></div>
-            <div className="g5"></div>
-         </div>
-      </div>
       <div
          className="flex flex-col w-full text-white pointer-events-auto overflow-y-hidden overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pt-[2vw] md:pt-[1.5vw] xl:pt-[1vw]">
          <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
@@ -423,12 +407,6 @@ export default function Page() {
       </div>
 
          <div
-         ref={scrollContainerRef}
-         onMouseEnter={() => setIsHovered(true)}
-         onMouseLeave={() => setIsHovered(false)}
-         onTouchStart={() => setIsHovered(true)}
-         onTouchEnd={() => setIsHovered(false)}
-         onTouchCancel={() => setIsHovered(false)}
          className="relative w-full px-[2vw] md:px-[1.5vw] xl:px-[1vw] overflow-x-auto whitespace-nowrap scroll-smooth pointer-events-auto"
          >
          <div className="flex flex-row w-max w-[100vw] overflow-y-hidden">
