@@ -63,7 +63,7 @@ return (
                     <p className="text-sm text-lightgray">Responsable - Levi&apos;s Store</p>
                 </div>
             </div>
-            <a href="https://www.malt.fr/profile/theosaly"
+            <a href="https://www.linkedin.com/in/theo-saly"
                 className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                 aria-label="Envoyer un email">
                 <FaLink />
