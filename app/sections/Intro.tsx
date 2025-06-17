@@ -19,9 +19,9 @@ export default function Intro() {
     return (
         <>
             <section className="md:min-h-70 xl:min-h-62 flex flex-col justify-between bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
-                <p className="text-2xl">
+                <p className="text-2xl nohemi font-extralight">
                     <img src="emojys/emojy-hand.png" alt="Salut" className="inline w-6 h-6 mr-2 align-text-bottom mb-0.5 animatewave pointer-events-auto" />
-                    Salut, moi c&apos;est Théo, développeur web sur Strasbourg, spécialisé depuis 5 ans dans la création de sites et d&apos;applications web sur mesure.
+                    <span className="font-bold" >Salut</span>, moi c&apos;est <span className="font-bold" >Théo</span> ! Je suis <span className="font-bold" >développeur web</span> sur Strasbourg, spécialisé depuis <span className="font-bold" >5 ans</span> dans la <span className="font-bold" >création de sites</span> & <span className="font-bold" >d&apos;applications web</span> sur mesure.
                 </p>
                 <div className="flex justify-between items-center mt-4">
                     <div className="flex justify-between items-center gap-2">

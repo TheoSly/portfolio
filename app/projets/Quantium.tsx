@@ -55,7 +55,7 @@ const isMobileTablet = typeof window !== "undefined" ? window.innerWidth < 1280 
             </div>
 
             <div className="absolute bottom-6 left-6 z-10">
-                <h2 className="text-white text-2xl">Quantium<span className="text-lightgray">.app</span></h2>
+                <h2 className="text-white text-2xl nohemi font-bold">Quantium<span className="font-extralight">.app</span></h2>
             </div>
             <div className="absolute bottom-6 right-6 z-10">
                 <a href="#" target="_blank"

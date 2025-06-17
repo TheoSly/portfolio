@@ -2,7 +2,7 @@ export default function Musique() {
 return (
 <>
     <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
-        <h2 className="text-lg mb-3">MUSIQUE FAVORITE</h2>
+        <h2 className="text-xl mb-3 nohemi font-medium">Musique Favorite</h2>
         <div className="flex flex-col">
             <iframe className="pointer-events-auto"
                 src="https://open.spotify.com/embed/track/75n9WHWZAzhB59xSjIHly4?utm_source=generator&theme=0"

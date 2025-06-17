@@ -63,9 +63,7 @@ const isMobileTablet = typeof window !== "undefined" ? window.innerWidth < 1280 
             </div>
 
             <div className="absolute bottom-6 left-6 z-10">
-                <h2 className="text-white text-2xl">
-                    Salink<span className="text-lightgray">.fr</span>
-                </h2>
+                <h2 className="text-white text-2xl nohemi font-bold">Salink<span className="font-extralight">.fr</span></h2>
             </div>
             <div className="absolute bottom-6 right-6 z-10">
                 <a href="https://salink.fr" target="_blank"

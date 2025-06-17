@@ -32,6 +32,8 @@ import Aquabion from "./projets/Aquabion";
 import Cuxdesign from "./projets/Cuxdesign";
 import Nathanmaurer from "./projets/Nathanmaurer";
 import Theosaly from "./projets/Theosaly";
+import Xtremdrift from "./projets/Xtremdrift";
+
 
 
 export default function Page() {
@@ -194,6 +196,7 @@ export default function Page() {
             <Aquabion />
             <Cuxdesign />
             <Nathanmaurer />
+            <Xtremdrift />
             <Theosaly />
          </div>
       </div>
@@ -327,6 +330,7 @@ export default function Page() {
             <Aquabion />
             <Cuxdesign />
             <Nathanmaurer />
+            <Xtremdrift />
             <Theosaly />
          </div>
       </div>
@@ -437,6 +441,7 @@ export default function Page() {
             <Aquabion />
             <Cuxdesign />
             <Nathanmaurer />
+            <Xtremdrift />
             <Theosaly />
          </div>
       </div>

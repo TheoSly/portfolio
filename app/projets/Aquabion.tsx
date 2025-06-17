@@ -44,7 +44,7 @@ const isMobileTablet = typeof window !== "undefined" ? window.innerWidth < 1280 
             </div>
 
             <div className="absolute bottom-6 left-6 z-10">
-                <h2 className="text-white text-2xl">Aquabion<span className="text-lightgray">.com</span></h2>
+                <h2 className="text-white text-2xl nohemi font-bold">Aquabion<span className="font-extralight">.com</span></h2>
             </div>
             <div className="absolute bottom-6 right-6 z-10">
                 <a href="https://aquabion-distribution.com" target="_blank" rel="noopener noreferrer"

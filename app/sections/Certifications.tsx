@@ -2,7 +2,7 @@ export default function Certifications() {
 return (
 <>
     <section className="bg-mediumgray bg-opacity-60 backdrop-blur-md p-4 rounded-2xl border-1 border-border m-[2vw] md:m-[1.5vw] xl:m-[1vw]">
-        <h2 className="text-lg">LICENCES ET CERTIFICATIONS</h2>
+        <h2 className="text-xl nohemi font-medium">Licences et certifications</h2>
         <div className="flex flex-col gap-4">
             <div className="flex gap-10 mt-4">
                 <div>
