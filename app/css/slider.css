@@ -13,3 +13,7 @@
     max-height: 200px;
     overflow-y: auto;
 }
+
+.swiper-slide-active img:hover {
+    filter: grayscale(0) !important;
+}

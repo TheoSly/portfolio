@@ -1,13 +1,13 @@
 "use client";
+import "./globals.css";
+
 import "./css/main.css";
+import "./css/loader.css";
+import "./css/hand-animation.css";
+import "./css/slider.css";
+import "./css/scrollbar.css";
 import "./css/map.css";
 import "./css/git.css";
-import "./css/slider.css";
-import "./css/hand-animation.css";
-import "./css/scrollbar.css";
-
-
-import "./globals.css";
 
 import Loader from "./loader/Loader";
 import { useState } from "react";

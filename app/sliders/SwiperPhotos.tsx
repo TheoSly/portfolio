@@ -35,13 +35,15 @@ export default function SwiperPhotos() {
             }}
             speed={500}
             modules={[Pagination, EffectFade, Autoplay]}
-            className="h-100 pointer-events-none"
+            className="h-100"
         >
             {images.map((img, idx) => (
-                <SwiperSlide className="pointer-events-none relative" key={idx}>
+                <SwiperSlide className="relative" key={idx}>
                     <div className="absolute top-0 left-0 w-full h-full bg-black pointer-events-none opacity-40 z-20 rounded-2xl" />
+
                     <img
-                        className="h-100 w-full object-cover rounded-2xl pointer-events-none relative z-10"
+                        className="grayscale transition duration-300 h-100 w-full object-cover rounded-2xl z-10
+                        swiper-slide-active:hover:grayscale-0"
                         src={`/images-mood/${img}`}
                         alt={img}
                     />
