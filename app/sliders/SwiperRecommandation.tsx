@@ -28,7 +28,7 @@ return (
                     <p className="text-sm text-lightgray">Directrice artistique - Marketify</p>
                 </div>
             </div>
-            <a href="https://www.linkedin.com/in/theo-saly"
+            <a href="https://www.linkedin.com/in/theo-saly" target='_blank'
                 className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                 aria-label="Envoyer un email">
                 <FaLink />
@@ -63,7 +63,7 @@ return (
                     <p className="text-sm text-lightgray">Responsable - Levi&apos;s Store</p>
                 </div>
             </div>
-            <a href="https://www.linkedin.com/in/theo-saly"
+            <a href="https://www.linkedin.com/in/theo-saly" target='_blank' 
                 className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                 aria-label="Envoyer un email">
                 <FaLink />
@@ -91,7 +91,7 @@ return (
                     <p className="text-sm text-lightgray">Fondateur - Digitallia</p>
                 </div>
             </div>
-            <a href="https://www.malt.fr/profile/theosaly"
+            <a href="https://www.malt.fr/profile/theosaly" target='_blank'
                 className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                 aria-label="Envoyer un email">
                 <FaLink />
@@ -118,7 +118,7 @@ return (
                     <p className="text-sm text-lightgray">Photographe & Vidéaste</p>
                 </div>
             </div>
-            <a href="https://www.linkedin.com/in/theo-saly"
+            <a href="https://www.linkedin.com/in/theo-saly" target='_blank'
                 className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                 aria-label="Envoyer un email">
                 <FaLink />
@@ -147,7 +147,7 @@ return (
                     <p className="text-sm text-lightgray">UX/UI Designer</p>
                 </div>
             </div>
-            <a href="https://www.linkedin.com/in/theo-saly"
+            <a href="https://www.linkedin.com/in/theo-saly" target='_blank'
                 className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto"
                 aria-label="Envoyer un email">
                 <FaLink />
