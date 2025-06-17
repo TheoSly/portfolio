@@ -46,53 +46,64 @@ export default function Page() {
     const container = scrollContainerRef.current;
     if (!container) return;
 
-    let interval: number | null = null;
-    let timeout: number | null = null;
-    let observer: IntersectionObserver | null = null;
+    let scrollInterval: number | null = null;
+    let scrollTimeout: number | null = null;
 
-    const startAutoScroll = () => {
-      interval = window.setInterval(() => {
+    const startScroll = () => {
+      if (scrollInterval) return;
+      scrollInterval = window.setInterval(() => {
         if (!isHovered && container.scrollLeft < container.scrollWidth - container.clientWidth) {
           container.scrollLeft += 1;
+        } else if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+          stopScroll(); // Stop at the end
         }
       }, 5);
     };
 
-    const handleScrollStart = () => {
+    const stopScroll = () => {
+      if (scrollInterval) {
+        clearInterval(scrollInterval);
+        scrollInterval = null;
+      }
+    };
+
+    const handleScrollTrigger = () => {
       if (!hasScrolled) {
-        timeout = window.setTimeout(() => {
-          startAutoScroll();
+        scrollTimeout = window.setTimeout(() => {
           setHasScrolled(true);
+          startScroll();
         }, 1000);
       } else {
-        if (!isHovered) {
-          startAutoScroll();
-        }
+        startScroll();
       }
     };
 
     if (device === "desktop" || device === "tablet") {
-      observer = new IntersectionObserver(
+      const observer = new IntersectionObserver(
         (entries) => {
           entries.forEach((entry) => {
             if (entry.isIntersecting) {
-              handleScrollStart();
+              handleScrollTrigger();
             }
           });
         },
         { threshold: 0.1 }
       );
-      observer.observe(container);
-    } else {
-      // Auto-scroll immediately on tablet and mobile
-      handleScrollStart();
-    }
 
-    return () => {
-      if (interval) window.clearInterval(interval);
-      if (timeout) window.clearTimeout(timeout);
-      if (observer && container) observer.unobserve(container);
-    };
+      if (container) observer.observe(container);
+
+      return () => {
+        stopScroll();
+        if (scrollTimeout) clearTimeout(scrollTimeout);
+        if (container) observer.unobserve(container);
+      };
+    } else {
+      handleScrollTrigger();
+      return () => {
+        stopScroll();
+        if (scrollTimeout) clearTimeout(scrollTimeout);
+      };
+    }
   }, [isHovered, hasScrolled, device]);
 
   return (
