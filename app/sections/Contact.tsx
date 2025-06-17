@@ -2,6 +2,22 @@ import React, { useState } from "react";
 
 export default function Contact() {
   const [status, setStatus] = useState("");
+  const translations = ["Envoyer", "Send", "Enviar", "Senden", "Invia", "发送", "Послати", "송신"];
+  const [buttonText, setButtonText] = useState(translations[0]);
+  const intervalRef = React.useRef<NodeJS.Timeout | null>(null);
+
+  const handleMouseEnter = () => {
+    let i = 1;
+    intervalRef.current = setInterval(() => {
+      setButtonText(translations[i % translations.length]);
+      i++;
+    }, 300);
+  };
+
+  const handleMouseLeave = () => {
+    if (intervalRef.current) clearInterval(intervalRef.current);
+    setButtonText(translations[0]);
+  };
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -35,8 +51,13 @@ export default function Contact() {
         <input type="email" name="email" placeholder="Votre email*" className="rounded-md px-2 py-1 bg-darkgray text-white border border-border pointer-events-auto" required />
         <textarea name="message" placeholder="Votre message*" className="rounded-md px-2 py-1 bg-darkgray text-white border border-border pointer-events-auto" rows={6} required />
         
-        <button type="submit" className="nohemi font-medium w-25 bg-white text-darkgray rounded-md px-3 py-1 mt-2 hover:scale-105 transition duration-300 cursor-pointer pointer-events-auto">
-          Envoyer
+        <button
+          type="submit"
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          className="nohemi font-medium w-25 bg-white text-darkgray rounded-md px-3 py-1 mt-2 hover:scale-105 transition duration-300 cursor-pointer pointer-events-auto"
+        >
+          {buttonText}
         </button>
         {status && <p className="text-sm mt-2">{status}</p>}
       </form>

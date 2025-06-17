@@ -1,5 +1,5 @@
 import { FaGithub } from "react-icons/fa6";
-import GithubCalendar from "../GithubCalendar";
+import GithubCalendar from "../Calendar/GithubCalendar";
 
 export default function Git() {
 return (
