@@ -188,7 +188,7 @@ export default function Page() {
       </div>
 
       <div
-         className="flex flex-row justify-between items-start w-full h-full text-white pointer-events-none overflow-y-auto overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pb-[2vw] md:pb-[1.5vw] xl:pb-[1vw]">
+         className="flex flex-row justify-between items-start w-full h-full text-white pointer-events-none overflow-y-hidden overflow-x-hidden px-[2vw] md:px-[1.5vw] xl:px-[1vw] pb-[2vw] md:pb-[1.5vw] xl:pb-[1vw]">
          <div className="flex w-1/3 flex-col">
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>

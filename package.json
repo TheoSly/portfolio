@@ -1,19 +1,14 @@
 {
-   "name": "use-shader-fx",
-   "description": "⚡️ More FXs, Less GLSL",
+   "name": "Portfolio Saly Théo",
+   "description": "Bienvenue sur mon portfolio bento.",
    "version": "0.1.0",
    "private": true,
    "scripts": {
       "dev": "next dev",
       "build": "next build",
-      "start": "next start",
-      "lint": "next lint",
-      "storybook": "storybook dev -p 6006",
-      "build-storybook": "storybook build",
-      "create-fx": "git clone https://github.com/takuma-hmng8/CreateShaderFx"
+      "start": "next start"
    },
    "dependencies": {
-      "@funtech-inc/spice": "^1.2.18",
       "@react-three/drei": "^9.105.6",
       "@react-three/fiber": "^8.16.6",
       "@tailwindcss/postcss": "^4.1.10",
@@ -26,35 +21,19 @@
       "framer-motion": "^12.18.1",
       "github-calendar": "^2.3.4",
       "glslify-loader": "^2.0.0",
-      "meshline": "^3.1.6",
       "next": "^14.2.3",
       "postcss": "^8.5.5",
       "raw-loader": "^4.0.2",
       "react": "18.2.0",
       "react-dom": "18.2.0",
       "react-icons": "^5.5.0",
-      "sass": "^1.66.1",
       "swiper": "^11.2.8",
       "tailwindcss": "^4.1.10",
-      "the-new-css-reset": "^1.9.0",
       "three": "^0.164.1",
-      "three-custom-shader-material": "^5.4.0",
       "three-stdlib": "^2.26.6",
-      "typescript": "5.2.2",
-      "zustand": "^4.4.1"
+      "typescript": "5.2.2"
    },
    "devDependencies": {
-      "@storybook/addon-essentials": "^7.5.3",
-      "@storybook/addon-interactions": "^7.5.3",
-      "@storybook/addon-links": "^7.5.3",
-      "@storybook/addon-onboarding": "^1.0.8",
-      "@storybook/blocks": "^7.5.3",
-      "@storybook/nextjs": "^7.5.3",
-      "@storybook/react": "^7.5.3",
-      "@storybook/testing-library": "^0.2.2",
-      "eslint-plugin-storybook": "^0.6.15",
-      "lil-gui": "^0.18.2",
-      "r3f-perf": "^7.1.2",
-      "storybook": "^7.5.3"
+      "lil-gui": "^0.18.2"
    }
 }
