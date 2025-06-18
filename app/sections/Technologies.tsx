@@ -51,6 +51,28 @@ return (
             </div>
             <div className="relative group">
                 <img
+                    className="rounded-xl w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
+                    src="icons-outils/javascript-icon.png"
+                    alt="Javascript"
+                    title="Javascript"
+                />
+                <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                    Javascript
+                </span>
+            </div>
+            <div className="relative group">
+                <img
+                    className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
+                    src="icons-outils/d3js-icon.png"
+                    alt="D3js"
+                    title="D3js"
+                />
+                <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                    D3js
+                </span>
+            </div>
+            <div className="relative group">
+                <img
                     className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
                     src="icons-outils/react-icon.png"
                     alt="React"
@@ -74,12 +96,34 @@ return (
             <div className="relative group">
                 <img
                     className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
+                    src="icons-outils/typescript-icon.png"
+                    alt="Typescript"
+                    title="Typescript"
+                />
+                <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                    Typescript
+                </span>
+            </div>
+            <div className="relative group">
+                <img
+                    className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
                     src="icons-outils/vuejs-icon.png"
                     alt="Vue.js"
                     title="Vue.js"
                 />
                 <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
                     Vue.js
+                </span>
+            </div>
+            <div className="relative group">
+                <img
+                    className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
+                    src="icons-outils/threejs-icon.png"
+                    alt="Three.js"
+                    title="Three.js"
+                />
+                <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                    Three.js
                 </span>
             </div>
             <div className="relative group">
@@ -106,6 +150,17 @@ return (
                 />
                 <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
                     PHP
+                </span>
+            </div>
+            <div className="relative group">
+                <img
+                    className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
+                    src="icons-outils/laravel-icon.png"
+                    alt="Laravel"
+                    title="Laravel"
+                />
+                <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                    Laravel
                 </span>
             </div>
             <div className="relative group">
@@ -159,6 +214,28 @@ return (
             <div className="relative group">
                 <img
                     className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
+                    src="icons-outils/phpstorm-icon.png"
+                    alt="Phpstorm"
+                    title="Phpstorm"
+                />
+                <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                    Phpstorm
+                </span>
+            </div>
+             <div className="relative group">
+                <img
+                    className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
+                    src="icons-outils/warp-icon.png"
+                    alt="Warp"
+                    title="Warp"
+                />
+                <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                    Warp
+                </span>
+            </div>
+            <div className="relative group">
+                <img
+                    className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
                     src="icons-outils/wordpress-icon.png"
                     alt="WordPress"
                     title="WordPress"
@@ -176,6 +253,17 @@ return (
                 />
                 <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
                     Elementor
+                </span>
+            </div>
+            <div className="relative group">
+                <img
+                    className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
+                    src="icons-outils/drupal-icon.png"
+                    alt="Elementor"
+                    title="Elementor"
+                />
+                <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                    Drupal
                 </span>
             </div>
             <div className="relative group">
@@ -231,6 +319,17 @@ return (
                 />
                 <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
                     Apache
+                </span>
+            </div>
+            <div className="relative group">
+                <img
+                    className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
+                    src="icons-outils/unity-icon.png"
+                    alt="Unity"
+                    title="Unity"
+                />
+                <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                    Unity
                 </span>
             </div>
             <div className="relative group">
@@ -312,6 +411,17 @@ return (
                 />
                 <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
                     DaVinci Resolve
+                </span>
+            </div>
+            <div className="relative group">
+                <img
+                    className="w-12 pointer-events-auto transition-transform duration-200 hover:scale-110 hover:drop-shadow-[0_0_3px_rgba(255,255,255,0.8)] grayscale hover:grayscale-0"
+                    src="icons-outils/blender-icon.png"
+                    alt="Blender"
+                    title="Blender"
+                />
+                <span className="absolute bottom-full mb-1 left-1/2 -translate-x-1/2 whitespace-nowrap bg-black text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-200 z-10">
+                    Blender
                 </span>
             </div>
         </div>
