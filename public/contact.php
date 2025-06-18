@@ -17,7 +17,7 @@ if (!$name || !$email || !$message || !filter_var($email, FILTER_VALIDATE_EMAIL)
 }
 
 // Construction du message
-$to = "contact@theo-saly.fr";
+$to = "contact@theo-saly.com";
 $subject = "Nouveau message du portfolio";
 $headers = "From: $name <$email>" . "\r\n" .
            "Reply-To: $email" . "\r\n" .

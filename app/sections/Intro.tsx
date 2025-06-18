@@ -26,9 +26,9 @@ export default function Intro() {
                 <div className="flex justify-between items-center mt-4">
                     <div className="flex justify-between items-center gap-2">
                         <a
-                            href="mailto:contact@theo-saly.fr"
-                            className="mail group flex items-center justify-start w-9 hover:w-44 transition-all duration-300 rounded-full border border-border bg-mediumgray pointer-events-auto pl-[9px] h-9 overflow-hidden"
-                            aria-label="Envoyer un email à contact@theo-saly.fr"
+                            href="mailto:contact@theo-saly.com"
+                            className="mail group flex items-center justify-start w-9 hover:w-48 transition-all duration-300 rounded-full border border-border bg-mediumgray pointer-events-auto pl-[9px] h-9 overflow-hidden"
+                            aria-label="Envoyer un email à contact@theo-saly.com"
                             onMouseEnter={handleMouseEnter}
                             onMouseLeave={handleMouseLeave}
                         >
@@ -36,7 +36,7 @@ export default function Intro() {
                                 <FaEnvelope />
                             </div>
                             <span className="whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-400 text-sm flex-shrink-0 -ml-2.5">
-                                contact@theo-saly.fr
+                                contact@theo-saly.com
                             </span>
                         </a>
                         <a

@@ -66,10 +66,10 @@ const isMobileTablet = typeof window !== "undefined" ? window.innerWidth < 1280 
             </div>
 
             <div className="absolute bottom-6 left-6 z-10">
-                <h2 className="text-white text-2xl nohemi font-bold">Theo-saly<span className="font-extralight">.fr</span></h2>
+                <h2 className="text-white text-2xl nohemi font-bold">Theo-saly<span className="font-extralight">.com</span></h2>
             </div>
             <div className="absolute bottom-6 right-6 z-10">
-                <a href="https://theo-saly.fr" target="_blank"
+                <a href="https://theo-saly.com" target="_blank"
                     className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto inline-flex items-center justify-center">
                     <FaLink className="fill-white" />
                 </a>
