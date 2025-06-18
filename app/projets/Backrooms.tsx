@@ -53,7 +53,7 @@ const isMobileTablet = typeof window !== "undefined" ? window.innerWidth < 1280 
                 <h2 className="text-white text-2xl nohemi font-bold">Backrooms<span className="font-extralight">.exe</span></h2>
             </div>
             <div className="absolute bottom-6 right-6 z-10">
-                <a href="#" target="_blank"
+                <a href="https://youtu.be/xwfNkpjEYpc" target="_blank"
                     className="rounded-full border border-border p-2 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto inline-flex items-center justify-center"
                     aria-label="Visiter Digitallia.fr">
                     <FaLink className="fill-white" />

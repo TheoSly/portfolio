@@ -26,11 +26,6 @@ export default function SwiperLogos() {
         >
             <SwiperSlide className="h-40">
                 <div className="flex justify-center items-center h-full">
-                    <img className="w-12" src="logos/edem.webp" alt="" />
-                </div>
-            </SwiperSlide>
-            <SwiperSlide className="h-40">
-                <div className="flex justify-center items-center h-full">
                     <img className="w-17" src="logos/extremdrift.png" alt="" />
                 </div>
             </SwiperSlide>

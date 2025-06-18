@@ -74,7 +74,7 @@ export default function Intro() {
                             showCV ? 'opacity-100' : 'opacity-0 pointer-events-none'
                         }`}
                     >
-                        <a href="download/cv-theo-saly.pdf"
+                        <a href="download/cv-theo-saly.pdf" target="_blank"
                             className="cv rounded-full border border-border py-2 px-4 hover:border-lightgray bg-mediumgray transition-colors duration-300 pointer-events-auto flex items-center justify-center gap-2"
                             aria-label="Télécharger le CV">
                             <FaDownload/>
