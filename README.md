@@ -76,12 +76,6 @@ npm run dev
 
 Le site sera accessible sur [http://localhost:3000](http://localhost:3000).
 
-### Build de production
-
-```bash
-npm run build
-```
-
 ---
 
 ## ✨ Fonctionnalités
