@@ -245,12 +245,12 @@ export default function Page() {
 
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
-               <Map />
+               <Git />
             </motion.div>
 
             <motion.div initial={{ opacity: 0, y: 200 }} whileInView={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.5}} viewport={{ once: true, amount: 0.1 }}>
-               <Git />
+               <Map />
             </motion.div>
          </div>
       </div>
