@@ -1,6 +1,6 @@
 # 🚀 Portfolio de Saly Théo – [theo-saly.com](https://theo-saly.com/)
 
-Bienvenue sur mon portfolio bento, développé avec **Next.js**, **React Three Fiber** et **Tailwind CSS**.  
+Bienvenue sur mon portfolio bento, développé avec **Next.js**, **React** et **Tailwind CSS**.  
 Explorez mes projets à travers une interface & interactive.
 
 ---
@@ -9,7 +9,7 @@ Explorez mes projets à travers une interface & interactive.
 
 - **Framework Frontend :** [Next.js](https://nextjs.org/)
 - **3D & WebGL :** [Three.js](https://threejs.org/) via [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/)
-- **Composants & Helpers 3D :** [@react-three/drei](https://github.com/pmndrs/drei), [three-stdlib](https://github.com/pmndrs/three-stdlib)
+- **Composants & Helpers :** [@react-three/drei](https://github.com/pmndrs/drei), [three-stdlib](https://github.com/pmndrs/three-stdlib)
 - **Animations :** [Framer Motion](https://www.framer.com/motion/)
 - **UI & CSS :** [Tailwind CSS](https://tailwindcss.com/)
 - **Swiper** pour les carrousels
