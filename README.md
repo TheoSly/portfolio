@@ -14,6 +14,7 @@ Explorez mes projets à travers une interface & interactive.
 - **UI & CSS :** [Tailwind CSS](https://tailwindcss.com/)
 - **Swiper** pour les carrousels
 - **GitHub Calendar** pour afficher mon activité GitHub
+- **Use-shader-fx** pour l'animation de background
 - **TypeScript** 
 
 ---
