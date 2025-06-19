@@ -36,80 +36,90 @@ import Xtremdrift from "./projets/Xtremdrift";
 
 
 
+/**
+ * Page d'accueil du portfolio.
+ * Affiche différentes sections selon le type d'appareil (desktop, tablette, mobile).
+ * Gère également un effet de scroll horizontal automatique pour la section projets.
+ */
 export default function Page() {
-  const device = useDeviceType();
+   const device = useDeviceType();
 
-  // --- Auto-scroll logic for horizontal scroll container ---
-  const scrollContainerRef = React.useRef<HTMLDivElement>(null);
-  const [isHovered, setIsHovered] = React.useState(false);
-  const [hasScrolled, setHasScrolled] = React.useState(false);
+   // --- Références et états pour le scroll horizontal automatique ---
+   const scrollContainerRef = React.useRef<HTMLDivElement>(null);
+   const [isHovered, setIsHovered] = React.useState(false);
+   const [hasScrolled, setHasScrolled] = React.useState(false);
 
-  React.useEffect(() => {
-    const container = scrollContainerRef.current;
-    if (!container) return;
+   // --- Effet pour gérer le scroll automatique de la section projets ---
+   React.useEffect(() => {
+      const container = scrollContainerRef.current;
+      if (!container) return;
 
-    let scrollInterval: number | null = null;
-    let scrollTimeout: number | null = null;
+      let scrollInterval: number | null = null;
+      let scrollTimeout: number | null = null;
 
-    const startScroll = () => {
-      if (scrollInterval) return;
-      scrollInterval = window.setInterval(() => {
-        if (!isHovered && container.scrollLeft < container.scrollWidth - container.clientWidth) {
-          container.scrollLeft += 1;
-        } else if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
-          stopScroll(); // Stop at the end
-        }
-      }, 5);
-    };
+      const startScroll = () => {
+         if (scrollInterval) return;
+         scrollInterval = window.setInterval(() => {
+         if (!isHovered && container.scrollLeft < container.scrollWidth - container.clientWidth) {
+            container.scrollLeft += 1;
+         } else if (container.scrollLeft >= container.scrollWidth - container.clientWidth) {
+            stopScroll();
+         }
+         }, 5);
+      };
 
-    const stopScroll = () => {
-      if (scrollInterval) {
-        clearInterval(scrollInterval);
-        scrollInterval = null;
-      }
-    };
+      const stopScroll = () => {
+         if (scrollInterval) {
+         clearInterval(scrollInterval);
+         scrollInterval = null;
+         }
+      };
 
-    const handleScrollTrigger = () => {
-      if (!hasScrolled) {
-        scrollTimeout = window.setTimeout(() => {
-          setHasScrolled(true);
-          startScroll();
-        }, 1000);
+      const handleScrollTrigger = () => {
+         if (!hasScrolled) {
+         scrollTimeout = window.setTimeout(() => {
+            setHasScrolled(true);
+            startScroll();
+         }, 1000);
+         } else {
+         startScroll();
+         }
+      };
+
+      if (device === "desktop" || device === "tablet") {
+         const observer = new IntersectionObserver(
+         (entries) => {
+            entries.forEach((entry) => {
+               if (entry.isIntersecting) {
+               handleScrollTrigger();
+               }
+            });
+         },
+         { threshold: 0.1 }
+         );
+
+         if (container) observer.observe(container);
+
+         return () => {
+         stopScroll();
+         if (scrollTimeout) clearTimeout(scrollTimeout);
+         if (container) observer.unobserve(container);
+         };
       } else {
-        startScroll();
+         handleScrollTrigger();
+         return () => {
+         stopScroll();
+         if (scrollTimeout) clearTimeout(scrollTimeout);
+         };
       }
-    };
+   }, [isHovered, hasScrolled, device]);
 
-    if (device === "desktop" || device === "tablet") {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              handleScrollTrigger();
-            }
-          });
-        },
-        { threshold: 0.1 }
-      );
-
-      if (container) observer.observe(container);
-
-      return () => {
-        stopScroll();
-        if (scrollTimeout) clearTimeout(scrollTimeout);
-        if (container) observer.unobserve(container);
-      };
-    } else {
-      handleScrollTrigger();
-      return () => {
-        stopScroll();
-        if (scrollTimeout) clearTimeout(scrollTimeout);
-      };
-    }
-  }, [isHovered, hasScrolled, device]);
-
-  return (
-    <>
+   // --- Rendu conditionnel selon le type d'appareil ---
+   // Chaque bloc (desktop, tablette, mobile) adapte la disposition des sections pour une expérience utilisateur optimale.
+   return (
+   <>
+   {/* Desktop */}
+   {/* Affichage en 3 colonnes, fond animé, scroll horizontal automatique sur les projets */}
    {device === "desktop" && (
    <>
       <div className="pointer-events-none z-0" style={{
@@ -246,7 +256,8 @@ export default function Page() {
       </div>
    </>
    )}
-
+   {/* Tablet */}
+   {/* Affichage en 2 colonnes, fond animé, scroll horizontal automatique sur les projets */}
    {device === "tablet" && (
    <>
       <div className="pointer-events-none z-0" style={{
@@ -379,7 +390,8 @@ export default function Page() {
       </div>
    </>
    )}
-
+   {/* Mobile */}
+   {/* Affichage en colonne unique, scroll horizontal sur les projets */}
    {device === "mobile" && (
    <>
       
